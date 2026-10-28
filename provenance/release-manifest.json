@@ -1439,8 +1439,8 @@
     },
     {
       "path": "harness/mechanics/CHANNELS.md",
-      "bytes": 7165,
-      "sha256": "130436df7de2a692c5652bb652291cba129caa56f0c4d2d91b8d33e7e3e84071"
+      "bytes": 7274,
+      "sha256": "159b7fbdefc371b027f96e4749c375b869068b8326cdbeeb13f30c8363986f23"
     },
     {
       "path": "harness/mechanics/CONNECTIONS.md",
@@ -2134,8 +2134,8 @@
     },
     {
       "path": "harness/sdk/TILES-AND-TABS.md",
-      "bytes": 6318,
-      "sha256": "c0b96950443b0971ccfc5dc4c27c47e369b0d903f20000bc1fbf7f46bcd53a5d"
+      "bytes": 6414,
+      "sha256": "d7e94c39d99b6f764219c57d841653392606ec312b4c9536a26427f40b6adb38"
     },
     {
       "path": "harness/sdk/agent_inputs.py",

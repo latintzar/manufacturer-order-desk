@@ -24,7 +24,7 @@ Load `/display-charts.css`, `/display-canvas.css`, `/display-charts.js` and `/di
 
 [display_runs.py](display_runs.py) stores policies, optimistic revisions, leased passes, run history and unfinished cleanup. The host supplies owner, collection and an opaque scope identifier. `claim`, `renew` and `finish` retain the original lease token. `due_reading` evaluates manual, interval, changed-input and daily triggers against the admitted input stamp.
 
-A calculation can run as a registered step in the [common signal chain](../mechanics/README.md#wakes-and-the-signal-chain), complete on its own or deliver its saved result to an agent. The producer checks exact source incarnation, revision and current scope. The original input snapshot and external job identity remain available while the signal or cleanup is unfinished. Recovery reconciles that job's receipts before another calculation is admitted.
+A calculation can run as a registered step in the [common signal chain](https://github.com/latintzar/agent-workspace/blob/d8b4c4074c2e30bae0924a73be015c27fdb36f13/harness/mechanics/README.md#wakes-and-the-signal-chain), complete on its own or deliver its saved result to an agent. The producer checks exact source incarnation, revision and current scope. The original input snapshot and external job identity remain available while the signal or cleanup is unfinished. Recovery reconciles that job's receipts before another calculation is admitted.
 
 Retail retains its installed ledger names and publication transaction through a thin adapter. Its source/camera checks, location time and output families remain in the vertical.
 

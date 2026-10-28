@@ -49,7 +49,7 @@ WhatsApp uses [messaging_config.py](messaging_config.py). Other capabilities use
 
 Credential files repeat the exact environment/workspace/account/capability binding. Email uses its API key and webhook secret; voice and Viber use their authentication token. Regular files and parent directories must be private, owner-held and symlink-free. Rotation rereads the private file while preserving the original binding. Public status exposes safe readiness rather than credentials.
 
-[Signed outgoing webhooks](CONNECTIONS.md#registered-outgoing-endpoints) use a registered owner-authorized endpoint and the same send ledger. Incoming hooks use the [signal chain](README.md#wakes-and-the-signal-chain). Their copy-once signing secret appears only in the private, identity-fenced control.
+[Signed outgoing webhooks](CONNECTIONS.md#registered-outgoing-endpoints) use a registered owner-authorized endpoint and the same send ledger. Incoming hooks use the [signal chain](https://github.com/latintzar/agent-workspace/blob/d8b4c4074c2e30bae0924a73be015c27fdb36f13/harness/mechanics/README.md#wakes-and-the-signal-chain). Their copy-once signing secret appears only in the private, identity-fenced control.
 
 ## Evidence
 
