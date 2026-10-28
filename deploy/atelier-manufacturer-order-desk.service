@@ -1,0 +1,37 @@
+[Unit]
+Description=Atelier manufacturer order desk
+After=network.target
+
+[Service]
+Type=simple
+User=atelier-manufacturer
+Group=atelier-manufacturer
+WorkingDirectory=/opt/atelier/manufacturer-order-desk/current
+Environment=PATH=/usr/bin:/bin
+Environment=PYTHONDONTWRITEBYTECODE=1
+UMask=0077
+StateDirectory=atelier-manufacturer-order-desk
+StateDirectoryMode=0700
+ExecStart=/opt/atelier/manufacturer-order-desk/current/.venv/bin/python tools/dev.py --guest --base-path /apps/manufacturer-order-desk/ --public-origin https://preview.atelierneyra.com --workspace-port 18780 --orders-port 18781 --state /var/lib/atelier-manufacturer-order-desk
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=30
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+IPAddressDeny=any
+IPAddressAllow=localhost
+ReadWritePaths=/var/lib/atelier-manufacturer-order-desk
+
+[Install]
+WantedBy=multi-user.target

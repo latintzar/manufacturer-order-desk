@@ -441,7 +441,7 @@ def register_routes(app, host, http):
         return not internal
     host.options['admit_member_request'] = admit_member_request
     host.options['member_status'] = lambda request: None if request.state.session.get('role') == 'owner' else {
-        'connection': {}, 'operator': {'name':'Питър','mode':'service'},
+        'connection': {}, 'operator': {'name':'Team','mode':'service'},
         'agent': {'authenticated':False,'active_chats':{}}, 'mode':'human_service'}
 
     def asset_handler(filename, media_type):
@@ -452,7 +452,12 @@ def register_routes(app, host, http):
         app.add_api_route(path, asset_handler(filename, media_type), methods=['GET', 'HEAD'])
 
     def context(request, writable=False):
-        actor, _ = http.connection_identity(request, writable=writable)
+        session = request.state.session
+        if not writable and session.get('role') == 'browse':
+            # Company read membership is separate from private chat ownership.
+            actor = session.get('principal', {}).get('id')
+        else:
+            actor, _ = http.connection_identity(request, writable=writable)
         selected = request.state.workspace
         extension = selected['vertical']
         try:

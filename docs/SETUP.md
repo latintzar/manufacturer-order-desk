@@ -89,4 +89,8 @@ The workspace’s public origin supplies its allowed host and hosted authenticat
 
 Use a separate origin for the editable workspace, with its API on the same origin. The original native session cookie is `rocoto_session`, scoped to `/`. When several projects share one preview origin, the reverse proxy must rewrite that cookie path to the workspace mount, for example `/apps/manufacturer-order-desk/`, and keep its API prefix within that mount. The static native sample is session-free and serves fixed read-only data; it can share the Atelier preview host.
 
+## Hosted native sample
+
+`tools/dev.py --guest --base-path /apps/manufacturer-order-desk/` runs the same native services with automatic browse membership, scoped cookies and server-enforced read-only access. Its pricing endpoint remains the original local calculator. Use the [deployment guide](../deploy/README.md) for the single-server unit, exact API/asset prefixes, private state and HTTPS origin. Running without `--guest` keeps the owner editing workflow.
+
 [made by atelier neyra](https://atelierneyra.com)

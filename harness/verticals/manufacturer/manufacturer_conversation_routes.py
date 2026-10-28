@@ -48,17 +48,18 @@ def register_conversations(app, *, context, body, invoke, host=None):
         return {'actor':actor, 'current':current}
 
     def authors(extension, result, actor, profile=None):
-        members = {p['id']: p.get('display_name') or 'Екип' for p in extension.selected['business_scope'].members()}
+        result['can_send'] = extension.authorized(actor)
+        members = {p['id']: p.get('display_name') or 'Team' for p in extension.selected['business_scope'].members()}
         contacts = {p.get('email', '').casefold(): p.get('name') or p.get('email') for p in (profile or {}).get('contacts', []) if p.get('email')}
         for message in result['messages']:
             author = message['author_id']
             if message['author_type'] == 'system':
-                name = 'Система'
+                name = 'System'
             elif message['author_type'] == 'customer':
                 contact = message.get('data', {}).get('evidence', {}).get('contact') or author
-                name = contacts.get(str(contact).casefold()) or ((profile or {}).get('display_name') or 'Клиент')
+                name = contacts.get(str(contact).casefold()) or ((profile or {}).get('display_name') or 'Customer')
             else:
-                name = members.get(author) or ('Питър' if message['author_type'] == 'provider' else 'Екип')
+                name = members.get(author) or 'Team'
             message['author_name'] = name
             message['direction'] = ('inbound' if message['author_type'] == 'customer' else 'outbound') if profile else ('outbound' if author == actor else 'inbound')
 
@@ -75,8 +76,9 @@ def register_conversations(app, *, context, body, invoke, host=None):
             result['archive'] = {'provider': 'native', 'url': '/api/manufacturer/service-conversation/archive'}
         else:
             result = extension.conversations.service_conversation(before=before)
-        result['title'] = 'Питър'
+        result['title'] = 'Team chat'
         result['delivery_ready'] = status['service_ready'] if status['selected'] else True
+        result['can_send'] = extension.authorized(actor)
         authors(extension, result, actor)
         extension.member(actor)
         return result

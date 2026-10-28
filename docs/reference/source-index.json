@@ -10770,91 +10770,91 @@
     {
       "path": "harness/mechanics/access.py",
       "name": "page_request",
-      "line": 16,
+      "line": 19,
       "kind": "function",
       "summary": "Admit one browser page marker; the canonical header takes precedence."
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "digest",
-      "line": 24,
+      "line": 27,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.__init__",
-      "line": 28,
+      "line": 31,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.connect",
-      "line": 64,
+      "line": 67,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.create_environment",
-      "line": 69,
+      "line": 72,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.issue",
-      "line": 77,
+      "line": 80,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.login",
-      "line": 101,
+      "line": 104,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.session",
-      "line": 122,
+      "line": 125,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.switch",
-      "line": 145,
+      "line": 148,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.principals",
-      "line": 154,
+      "line": 157,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.observe",
-      "line": 166,
+      "line": 169,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.clear_observer",
-      "line": 177,
+      "line": 180,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/mechanics/access.py",
       "name": "AccessStore.logout",
-      "line": 187,
+      "line": 190,
       "kind": "function",
       "summary": ""
     },
@@ -21149,6 +21149,104 @@
       "summary": ""
     },
     {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "base_path",
+      "line": 14,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.__init__",
+      "line": 21,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.path",
+      "line": 26,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.origin",
+      "line": 27,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.text",
+      "line": 30,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.text.attribute",
+      "line": 38,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.value",
+      "line": 43,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.unvalue",
+      "line": 52,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.headers",
+      "line": 61,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.__call__",
+      "line": 79,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.__call__.normalized_receive",
+      "line": 105,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.__call__.wrapped",
+      "line": 114,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.proxy",
+      "line": 137,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "name": "MountedApp.refuse",
+      "line": 166,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
       "path": "harness/mechanics/workspace_auth.py",
       "name": "AuthError.__init__",
       "line": 34,
@@ -27682,1008 +27780,1008 @@
     {
       "path": "harness/server.py",
       "name": "create_app.ready_workspace",
-      "line": 250,
+      "line": 254,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.ready_workspace.recover_managed",
-      "line": 257,
+      "line": 261,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.close_workspace",
-      "line": 265,
+      "line": 269,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.abandon_workspace",
-      "line": 283,
+      "line": 287,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.lifespan",
-      "line": 293,
+      "line": 297,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.lifespan.tick",
-      "line": 294,
+      "line": 298,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.scope_member",
-      "line": 362,
+      "line": 366,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.scope_members",
-      "line": 373,
+      "line": 377,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.install_scheduler",
-      "line": 381,
+      "line": 385,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.install_scheduler.phone_spending_ready",
-      "line": 460,
+      "line": 464,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.install_scheduler.phone_entry",
-      "line": 485,
+      "line": 489,
       "kind": "function",
       "summary": "Write a contact card or an alert into its Tracking Agent chat, replacing its earlier state."
     },
     {
       "path": "harness/server.py",
       "name": "create_app.install_scheduler.current_agent_authority",
-      "line": 531,
+      "line": 535,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.install_scheduler.current_signal_authority",
-      "line": 542,
+      "line": 546,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.workspace",
-      "line": 581,
+      "line": 585,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.services_for_environment",
-      "line": 607,
+      "line": 611,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.local_operator_only",
-      "line": 656,
+      "line": 660,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.local_operator_only.permitted",
-      "line": 754,
+      "line": 764,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.local_operator_only.guarded_body",
-      "line": 769,
+      "line": 779,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.connection_identity",
-      "line": 781,
-      "kind": "function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.messaging_member",
       "line": 791,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.messaging_member",
+      "line": 801,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.messaging_members",
-      "line": 802,
+      "line": 812,
       "kind": "function",
       "summary": "The company's current owners and operators, the two roles a participant holds."
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_authorized",
-      "line": 811,
+      "line": 821,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_body",
-      "line": 835,
+      "line": 845,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.organization_identity",
-      "line": 850,
+      "line": 860,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_actor",
-      "line": 861,
+      "line": 871,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_projection",
-      "line": 873,
+      "line": 883,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.organization_chats",
-      "line": 908,
+      "line": 918,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.organization_chat",
-      "line": 920,
+      "line": 930,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_status",
-      "line": 934,
+      "line": 944,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_verification",
-      "line": 938,
+      "line": 948,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_confirm",
-      "line": 953,
+      "line": 963,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_hello",
-      "line": 968,
+      "line": 978,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.registered_workspace_root",
-      "line": 984,
+      "line": 994,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.pending_signal_workspaces",
-      "line": 992,
+      "line": 1002,
       "kind": "function",
       "summary": "Discover durable work without constructing another runtime for idle companies."
     },
     {
       "path": "harness/server.py",
       "name": "create_app.cold_signal_sources",
-      "line": 1020,
-      "kind": "function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.cold_signal_sources.ingress_current",
       "line": 1030,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.cold_signal_sources.ingress_current",
+      "line": 1040,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.incoming_hook",
-      "line": 1047,
+      "line": 1057,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.wake_sources",
-      "line": 1069,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.endpoint_secret",
       "line": 1079,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.endpoint_secret",
+      "line": 1089,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.reveal_wake_secret",
-      "line": 1091,
+      "line": 1101,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_webhook",
-      "line": 1106,
+      "line": 1116,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.phone_tick",
-      "line": 1152,
+      "line": 1162,
       "kind": "async function",
       "summary": "One pass of host alert delivery. A failed pass sends nothing and leaves the other ticks running."
     },
     {
       "path": "harness/server.py",
       "name": "create_app.messaging_tick",
-      "line": 1166,
+      "line": 1176,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.native_package_store",
-      "line": 1180,
+      "line": 1190,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.revoke_native_plugin",
-      "line": 1187,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.native_installation_capabilities",
       "line": 1197,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.native_installation_capabilities",
+      "line": 1207,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.plugins_catalogue",
-      "line": 1215,
+      "line": 1225,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.plugin_details",
-      "line": 1219,
+      "line": 1229,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.connections",
-      "line": 1226,
+      "line": 1236,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.custom_identity",
-      "line": 1230,
+      "line": 1240,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.document_previews_for_workspace",
-      "line": 1253,
+      "line": 1263,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.custom_connections",
-      "line": 1262,
+      "line": 1272,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.create_custom_connection",
-      "line": 1277,
+      "line": 1287,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.create_custom_connection.build_connector",
-      "line": 1298,
+      "line": 1308,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.create_custom_connection.release",
-      "line": 1310,
+      "line": 1320,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.custom_connection",
-      "line": 1316,
+      "line": 1326,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.custom_connection_package",
-      "line": 1334,
+      "line": 1344,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.custom_connection_secret",
-      "line": 1343,
+      "line": 1353,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.custom_connection_secret_remove",
-      "line": 1364,
+      "line": 1374,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.connect_provider",
-      "line": 1370,
+      "line": 1380,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.connection_flow",
-      "line": 1413,
+      "line": 1423,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.disconnect_provider",
-      "line": 1422,
+      "line": 1432,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.oauth_landing",
-      "line": 1433,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.oauth_script",
-      "line": 1439,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.oauth_callback",
       "line": 1443,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.oauth_script",
+      "line": 1449,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
+      "name": "create_app.oauth_callback",
+      "line": 1453,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.home",
-      "line": 1452,
+      "line": 1462,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.script",
-      "line": 1472,
+      "line": 1482,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.question_box_script",
-      "line": 1476,
+      "line": 1486,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.question_box_style",
-      "line": 1480,
+      "line": 1490,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.logo",
-      "line": 1484,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.wordmark_font",
-      "line": 1489,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.connection_brand",
       "line": 1494,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.wordmark_font",
+      "line": 1499,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
+      "name": "create_app.connection_brand",
+      "line": 1504,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.vendor",
-      "line": 1500,
+      "line": 1510,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.workspace_artwork",
-      "line": 1507,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.empty_state_artwork",
-      "line": 1512,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.style",
       "line": 1517,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.empty_state_artwork",
+      "line": 1522,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
+      "name": "create_app.style",
+      "line": 1527,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.interface_component",
-      "line": 1551,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.diagram_component",
-      "line": 1557,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.shared_static",
       "line": 1561,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.diagram_component",
+      "line": 1567,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
+      "name": "create_app.shared_static",
+      "line": 1571,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.shared_vendor",
-      "line": 1578,
+      "line": 1588,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.source_icon",
-      "line": 1582,
+      "line": 1592,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.theme",
-      "line": 1590,
+      "line": 1600,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.session_details",
-      "line": 1614,
+      "line": 1624,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.health",
-      "line": 1627,
+      "line": 1637,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.session_info",
-      "line": 1642,
+      "line": 1652,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.set_session",
-      "line": 1645,
+      "line": 1659,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.login",
-      "line": 1653,
+      "line": 1667,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.demo_session",
-      "line": 1663,
+      "line": 1677,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.logout",
-      "line": 1672,
+      "line": 1686,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.select_environment",
-      "line": 1680,
+      "line": 1694,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.observers",
-      "line": 1689,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.observe",
-      "line": 1696,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.end_observation",
       "line": 1703,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
-      "name": "create_app.status",
+      "name": "create_app.observe",
       "line": 1710,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.end_observation",
+      "line": 1717,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
+      "name": "create_app.status",
+      "line": 1724,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.business",
-      "line": 1731,
+      "line": 1745,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.business_map",
-      "line": 1742,
+      "line": 1756,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.business_profile",
-      "line": 1773,
+      "line": 1787,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.onboarding",
-      "line": 1780,
+      "line": 1794,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.profile_activity",
-      "line": 1798,
+      "line": 1812,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.usage",
-      "line": 1823,
+      "line": 1837,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.usage_settings",
-      "line": 1849,
+      "line": 1863,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.installed_native_skills",
-      "line": 1859,
+      "line": 1873,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.skills_catalogue",
-      "line": 1872,
+      "line": 1886,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.skills_installed",
-      "line": 1877,
+      "line": 1891,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.skills_install",
-      "line": 1882,
+      "line": 1896,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agent_catalogue",
-      "line": 1890,
+      "line": 1904,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.participant_agent",
-      "line": 1897,
+      "line": 1911,
       "kind": "function",
       "summary": "An agent with participant reach shares its conversation with a selected participant."
     },
     {
       "path": "harness/server.py",
       "name": "create_app.owned_agent",
-      "line": 1906,
+      "line": 1920,
       "kind": "function",
       "summary": "The agent for its owner. A participant reads it; its definition and controls stay the owner's."
     },
     {
       "path": "harness/server.py",
       "name": "create_app.public_agent",
-      "line": 1922,
+      "line": 1936,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.capability_snapshot",
-      "line": 1932,
+      "line": 1946,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.workspace_capabilities",
-      "line": 1943,
+      "line": 1957,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agents_list",
-      "line": 1948,
+      "line": 1962,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agents_create",
-      "line": 1969,
+      "line": 1983,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agent_details",
-      "line": 1982,
+      "line": 1996,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agent_update",
-      "line": 1986,
+      "line": 2000,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.activate_agent",
-      "line": 1998,
+      "line": 2012,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agent_activate",
-      "line": 2014,
+      "line": 2028,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agent_run",
-      "line": 2018,
+      "line": 2032,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agent_pause",
-      "line": 2022,
+      "line": 2036,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.agent_report",
-      "line": 2030,
+      "line": 2044,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.chat",
-      "line": 2053,
+      "line": 2067,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.chat.release_task",
-      "line": 2154,
+      "line": 2168,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.chat.events",
-      "line": 2158,
+      "line": 2172,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.chats",
-      "line": 2164,
+      "line": 2178,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.chat_metadata",
-      "line": 2173,
+      "line": 2187,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.child_chat",
-      "line": 2184,
+      "line": 2198,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.require_parent_control",
-      "line": 2216,
+      "line": 2230,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.answer_native_approval",
-      "line": 2223,
+      "line": 2237,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.answer_native_question",
-      "line": 2256,
+      "line": 2270,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.answer_credential_request",
-      "line": 2291,
+      "line": 2305,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.stop_chat",
-      "line": 2336,
+      "line": 2350,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.steer_chat",
-      "line": 2353,
+      "line": 2367,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.attachment",
-      "line": 2375,
+      "line": 2389,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.attachment_image",
-      "line": 2394,
+      "line": 2408,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.file_owner",
-      "line": 2406,
-      "kind": "function",
-      "summary": ""
-    },
-    {
-      "path": "harness/server.py",
-      "name": "create_app.file_principal",
       "line": 2420,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
+      "name": "create_app.file_principal",
+      "line": 2434,
+      "kind": "function",
+      "summary": ""
+    },
+    {
+      "path": "harness/server.py",
       "name": "create_app.file_principal.history_guard",
-      "line": 2430,
+      "line": 2444,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.list_files",
-      "line": 2452,
+      "line": 2466,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.get_file",
-      "line": 2471,
+      "line": 2485,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.file_content",
-      "line": 2479,
+      "line": 2493,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.rename_file",
-      "line": 2488,
+      "line": 2502,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.mark_file_opened",
-      "line": 2501,
+      "line": 2515,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.download_file",
-      "line": 2510,
+      "line": 2524,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/server.py",
       "name": "create_app.preview_file",
-      "line": 2529,
+      "line": 2543,
       "kind": "async function",
       "summary": ""
     },
@@ -29103,84 +29201,84 @@
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.service",
-      "line": 65,
+      "line": 66,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.customer",
-      "line": 84,
+      "line": 86,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.review_context",
-      "line": 133,
+      "line": 135,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.get_review",
-      "line": 145,
+      "line": 147,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.prepare_review",
-      "line": 150,
+      "line": 152,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.get_service",
-      "line": 200,
+      "line": 202,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.send_service",
-      "line": 205,
+      "line": 207,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.get_customer",
-      "line": 227,
+      "line": 229,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.send_customer",
-      "line": 233,
+      "line": 235,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.send_customer.admission",
-      "line": 243,
+      "line": 245,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.service_archive",
-      "line": 257,
+      "line": 259,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
       "name": "register_conversations.customer_archive",
-      "line": 266,
+      "line": 268,
       "kind": "async function",
       "summary": ""
     },
@@ -30181,147 +30279,147 @@
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.invoke",
-      "line": 464,
+      "line": 469,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.body",
-      "line": 478,
+      "line": 483,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.upload_source",
-      "line": 497,
+      "line": 502,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.overview",
-      "line": 510,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.create_order",
       "line": 515,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.order",
-      "line": 523,
+      "name": "register_routes.create_order",
+      "line": 520,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.order_files",
+      "name": "register_routes.order",
       "line": 528,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
+      "name": "register_routes.order_files",
+      "line": 533,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.order_file",
-      "line": 535,
+      "line": 540,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.order_file_page",
-      "line": 542,
+      "line": 547,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.customers",
-      "line": 556,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.customer",
       "line": 561,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.configurator",
+      "name": "register_routes.customer",
       "line": 566,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.save_configurator",
+      "name": "register_routes.configurator",
       "line": 571,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.versions",
-      "line": 577,
+      "name": "register_routes.save_configurator",
+      "line": 576,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.version",
+      "name": "register_routes.versions",
       "line": 582,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.restore_version",
+      "name": "register_routes.version",
       "line": 587,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
+      "name": "register_routes.restore_version",
+      "line": 592,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.restore",
-      "line": 595,
+      "line": 600,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.preview",
-      "line": 603,
+      "line": 608,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "register_routes.team",
-      "line": 615,
-      "kind": "async function",
-      "summary": ""
-    },
-    {
-      "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "name": "register_routes.update_team",
       "line": 620,
       "kind": "async function",
       "summary": ""
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
+      "name": "register_routes.update_team",
+      "line": 625,
+      "kind": "async function",
+      "summary": ""
+    },
+    {
+      "path": "harness/verticals/manufacturer/manufacturer_host.py",
       "name": "lifespan",
-      "line": 627,
+      "line": 632,
       "kind": "async function",
       "summary": ""
     },
@@ -39015,7 +39113,7 @@
     {
       "path": "tools/check_browser.py",
       "name": "main.route",
-      "line": 16,
+      "line": 29,
       "kind": "function",
       "summary": ""
     },
@@ -39029,35 +39127,35 @@
     {
       "path": "tools/dev.py",
       "name": "private_json",
-      "line": 6,
+      "line": 7,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "tools/dev.py",
       "name": "environment",
-      "line": 10,
+      "line": 11,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "tools/dev.py",
       "name": "main",
-      "line": 12,
+      "line": 21,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "tools/dev.py",
       "name": "main.stop",
-      "line": 25,
+      "line": 38,
       "kind": "function",
       "summary": ""
     },
     {
       "path": "tools/dev.py",
       "name": "main.stop",
-      "line": 56,
+      "line": 82,
       "kind": "function",
       "summary": ""
     },
@@ -40096,6 +40194,11 @@
       "summary": "Conversation-bound tools for signed webhooks and finite self-set wakes."
     },
     {
+      "path": "harness/mechanics/web_mount.py",
+      "definitions": 14,
+      "summary": "Mount the real workspace and Orders HTTP service below one deployment path."
+    },
+    {
       "path": "harness/mechanics/workspace_auth.py",
       "definitions": 25,
       "summary": "Hosted WorkOS identity admission into the harness's existing workspace sessions."
@@ -40977,882 +41080,882 @@
       "method": "GET",
       "route": "/api/organization/chats",
       "path": "harness/server.py",
-      "line": 908,
+      "line": 918,
       "handler": "create_app.organization_chats"
     },
     {
       "method": "POST",
       "route": "/api/organization/chats",
       "path": "harness/server.py",
-      "line": 920,
+      "line": 930,
       "handler": "create_app.organization_chat"
     },
     {
       "method": "GET",
       "route": "/api/messaging",
       "path": "harness/server.py",
-      "line": 934,
+      "line": 944,
       "handler": "create_app.messaging_status"
     },
     {
       "method": "POST",
       "route": "/api/messaging/verification",
       "path": "harness/server.py",
-      "line": 938,
+      "line": 948,
       "handler": "create_app.messaging_verification"
     },
     {
       "method": "POST",
       "route": "/api/messaging/verification/confirm",
       "path": "harness/server.py",
-      "line": 953,
+      "line": 963,
       "handler": "create_app.messaging_confirm"
     },
     {
       "method": "POST",
       "route": "/api/messaging/hello",
       "path": "harness/server.py",
-      "line": 968,
+      "line": 978,
       "handler": "create_app.messaging_hello"
     },
     {
       "method": "POST",
       "route": "/hooks/in/{environment}/{hook_id}",
       "path": "harness/server.py",
-      "line": 1047,
+      "line": 1057,
       "handler": "create_app.incoming_hook"
     },
     {
       "method": "POST",
       "route": "/api/hooks/{environment}/{hook_id}",
       "path": "harness/server.py",
-      "line": 1047,
+      "line": 1057,
       "handler": "create_app.incoming_hook"
     },
     {
       "method": "GET",
       "route": "/api/wakes",
       "path": "harness/server.py",
-      "line": 1069,
+      "line": 1079,
       "handler": "create_app.wake_sources"
     },
     {
       "method": "POST",
       "route": "/api/wakes/endpoints/{endpoint_id}/secret",
       "path": "harness/server.py",
-      "line": 1079,
+      "line": 1089,
       "handler": "create_app.endpoint_secret"
     },
     {
       "method": "POST",
       "route": "/api/wakes/hooks/{hook_id}/secret",
       "path": "harness/server.py",
-      "line": 1091,
+      "line": 1101,
       "handler": "create_app.reveal_wake_secret"
     },
     {
       "method": "POST",
       "route": "/hooks/{channel}/{environment}",
       "path": "harness/server.py",
-      "line": 1106,
+      "line": 1116,
       "handler": "create_app.messaging_webhook"
     },
     {
       "method": "GET",
       "route": "/hooks/{channel}/{environment}",
       "path": "harness/server.py",
-      "line": 1106,
+      "line": 1116,
       "handler": "create_app.messaging_webhook"
     },
     {
       "method": "POST",
       "route": "/api/messaging/webhook/{environment}/{channel}",
       "path": "harness/server.py",
-      "line": 1106,
+      "line": 1116,
       "handler": "create_app.messaging_webhook"
     },
     {
       "method": "GET",
       "route": "/api/plugins/catalogue",
       "path": "harness/server.py",
-      "line": 1215,
+      "line": 1225,
       "handler": "create_app.plugins_catalogue"
     },
     {
       "method": "GET",
       "route": "/api/plugins/{plugin_id}",
       "path": "harness/server.py",
-      "line": 1219,
+      "line": 1229,
       "handler": "create_app.plugin_details"
     },
     {
       "method": "GET",
       "route": "/api/connections",
       "path": "harness/server.py",
-      "line": 1226,
+      "line": 1236,
       "handler": "create_app.connections"
     },
     {
       "method": "GET",
       "route": "/api/connections/custom",
       "path": "harness/server.py",
-      "line": 1262,
+      "line": 1272,
       "handler": "create_app.custom_connections"
     },
     {
       "method": "POST",
       "route": "/api/connections/custom",
       "path": "harness/server.py",
-      "line": 1277,
+      "line": 1287,
       "handler": "create_app.create_custom_connection"
     },
     {
       "method": "GET",
       "route": "/api/connections/custom/{connector_id}",
       "path": "harness/server.py",
-      "line": 1316,
+      "line": 1326,
       "handler": "create_app.custom_connection"
     },
     {
       "method": "GET",
       "route": "/api/connections/custom/{connector_id}/package",
       "path": "harness/server.py",
-      "line": 1334,
+      "line": 1344,
       "handler": "create_app.custom_connection_package"
     },
     {
       "method": "POST",
       "route": "/api/connections/custom/{connector_id}/secrets",
       "path": "harness/server.py",
-      "line": 1343,
+      "line": 1353,
       "handler": "create_app.custom_connection_secret"
     },
     {
       "method": "DELETE",
       "route": "/api/connections/custom/{connector_id}/secrets/{name}",
       "path": "harness/server.py",
-      "line": 1364,
+      "line": 1374,
       "handler": "create_app.custom_connection_secret_remove"
     },
     {
       "method": "POST",
       "route": "/api/connections/{provider}/connect",
       "path": "harness/server.py",
-      "line": 1370,
+      "line": 1380,
       "handler": "create_app.connect_provider"
     },
     {
       "method": "GET",
       "route": "/api/connections/flows/{flow_id}",
       "path": "harness/server.py",
-      "line": 1413,
+      "line": 1423,
       "handler": "create_app.connection_flow"
     },
     {
       "method": "DELETE",
       "route": "/api/connections/{provider}",
       "path": "harness/server.py",
-      "line": 1422,
+      "line": 1432,
       "handler": "create_app.disconnect_provider"
     },
     {
       "method": "GET",
       "route": "/api/connections/oauth/callback",
       "path": "harness/server.py",
-      "line": 1433,
+      "line": 1443,
       "handler": "create_app.oauth_landing"
     },
     {
       "method": "GET",
       "route": "/oauth-callback.js",
       "path": "harness/server.py",
-      "line": 1439,
+      "line": 1449,
       "handler": "create_app.oauth_script"
     },
     {
       "method": "POST",
       "route": "/api/connections/oauth/callback",
       "path": "harness/server.py",
-      "line": 1443,
+      "line": 1453,
       "handler": "create_app.oauth_callback"
     },
     {
       "method": "GET",
       "route": "/",
       "path": "harness/server.py",
-      "line": 1452,
+      "line": 1462,
       "handler": "create_app.home"
     },
     {
       "method": "GET",
       "route": "/app.js",
       "path": "harness/server.py",
-      "line": 1472,
+      "line": 1482,
       "handler": "create_app.script"
     },
     {
       "method": "GET",
       "route": "/question-box.js",
       "path": "harness/server.py",
-      "line": 1476,
+      "line": 1486,
       "handler": "create_app.question_box_script"
     },
     {
       "method": "GET",
       "route": "/question-box.css",
       "path": "harness/server.py",
-      "line": 1480,
+      "line": 1490,
       "handler": "create_app.question_box_style"
     },
     {
       "method": "GET",
       "route": "/brand/rocoto-mark.svg",
       "path": "harness/server.py",
-      "line": 1484,
+      "line": 1494,
       "handler": "create_app.logo"
     },
     {
       "method": "GET",
       "route": "/fonts/fraunces/fraunces-latin-500-700.woff2",
       "path": "harness/server.py",
-      "line": 1489,
+      "line": 1499,
       "handler": "create_app.wordmark_font"
     },
     {
       "method": "GET",
       "route": "/connection-brands/{filename}",
       "path": "harness/server.py",
-      "line": 1494,
+      "line": 1504,
       "handler": "create_app.connection_brand"
     },
     {
       "method": "GET",
       "route": "/vendor/{filename:path}",
       "path": "harness/server.py",
-      "line": 1500,
+      "line": 1510,
       "handler": "create_app.vendor"
     },
     {
       "method": "GET",
       "route": "/assets/chat-dreamscape.png",
       "path": "harness/server.py",
-      "line": 1507,
+      "line": 1517,
       "handler": "create_app.workspace_artwork"
     },
     {
       "method": "GET",
       "route": "/assets/search-dreamscape.png",
       "path": "harness/server.py",
-      "line": 1507,
+      "line": 1517,
       "handler": "create_app.workspace_artwork"
     },
     {
       "method": "GET",
       "route": "/assets/monet-water-lilies.jpg",
       "path": "harness/server.py",
-      "line": 1512,
+      "line": 1522,
       "handler": "create_app.empty_state_artwork"
     },
     {
       "method": "GET",
       "route": "/style.css",
       "path": "harness/server.py",
-      "line": 1517,
+      "line": 1527,
       "handler": "create_app.style"
     },
     {
       "method": "GET",
       "route": "/business-summary.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/business-summary.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/settings-shell.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/settings-shell.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/harness-shell.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/workspace-tabs.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/workspace-extensions.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/wake-controls.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/wake-controls.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/workspace-tabs.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/workspace-home.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/workspace-home.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/display-charts.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/display-charts.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/display-canvas.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/display-canvas.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/tool-trail.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/tool-trail.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/rich-content.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/rich-content.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/rich-diagram.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/profile-settings.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/profile-settings.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/plugin-settings.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/plugin-settings.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/messaging-settings.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/messaging-settings.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/workspace-settings.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/workspace-settings.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/business-map.js",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/business-map.css",
       "path": "harness/server.py",
-      "line": 1551,
+      "line": 1561,
       "handler": "create_app.interface_component"
     },
     {
       "method": "GET",
       "route": "/rich-diagram.html",
       "path": "harness/server.py",
-      "line": 1557,
+      "line": 1567,
       "handler": "create_app.diagram_component"
     },
     {
       "method": "GET",
       "route": "/static/vendor/{filename:path}",
       "path": "harness/server.py",
-      "line": 1578,
+      "line": 1588,
       "handler": "create_app.shared_vendor"
     },
     {
       "method": "GET",
       "route": "/api/source-icon",
       "path": "harness/server.py",
-      "line": 1582,
+      "line": 1592,
       "handler": "create_app.source_icon"
     },
     {
       "method": "GET",
       "route": "/theme.css",
       "path": "harness/server.py",
-      "line": 1590,
+      "line": 1600,
       "handler": "create_app.theme"
     },
     {
       "method": "GET",
       "route": "/healthz",
       "path": "harness/server.py",
-      "line": 1627,
+      "line": 1637,
       "handler": "create_app.health"
     },
     {
       "method": "GET",
       "route": "/api/session",
       "path": "harness/server.py",
-      "line": 1642,
+      "line": 1652,
       "handler": "create_app.session_info"
     },
     {
       "method": "POST",
       "route": "/api/session",
       "path": "harness/server.py",
-      "line": 1653,
+      "line": 1667,
       "handler": "create_app.login"
     },
     {
       "method": "POST",
       "route": "/api/session/demo",
       "path": "harness/server.py",
-      "line": 1663,
+      "line": 1677,
       "handler": "create_app.demo_session"
     },
     {
       "method": "DELETE",
       "route": "/api/session",
       "path": "harness/server.py",
-      "line": 1672,
+      "line": 1686,
       "handler": "create_app.logout"
     },
     {
       "method": "POST",
       "route": "/api/session/company",
       "path": "harness/server.py",
-      "line": 1680,
+      "line": 1694,
       "handler": "create_app.select_environment"
     },
     {
       "method": "POST",
       "route": "/api/environment",
       "path": "harness/server.py",
-      "line": 1680,
+      "line": 1694,
       "handler": "create_app.select_environment"
     },
     {
       "method": "GET",
       "route": "/api/observers",
       "path": "harness/server.py",
-      "line": 1689,
+      "line": 1703,
       "handler": "create_app.observers"
     },
     {
       "method": "POST",
       "route": "/api/observer",
       "path": "harness/server.py",
-      "line": 1696,
+      "line": 1710,
       "handler": "create_app.observe"
     },
     {
       "method": "DELETE",
       "route": "/api/observer",
       "path": "harness/server.py",
-      "line": 1703,
+      "line": 1717,
       "handler": "create_app.end_observation"
     },
     {
       "method": "GET",
       "route": "/api/status",
       "path": "harness/server.py",
-      "line": 1710,
+      "line": 1724,
       "handler": "create_app.status"
     },
     {
       "method": "GET",
       "route": "/api/business",
       "path": "harness/server.py",
-      "line": 1731,
+      "line": 1745,
       "handler": "create_app.business"
     },
     {
       "method": "GET",
       "route": "/api/business/map",
       "path": "harness/server.py",
-      "line": 1742,
+      "line": 1756,
       "handler": "create_app.business_map"
     },
     {
       "method": "POST",
       "route": "/api/business/profile",
       "path": "harness/server.py",
-      "line": 1773,
+      "line": 1787,
       "handler": "create_app.business_profile"
     },
     {
       "method": "POST",
       "route": "/api/business/onboarding",
       "path": "harness/server.py",
-      "line": 1780,
+      "line": 1794,
       "handler": "create_app.onboarding"
     },
     {
       "method": "GET",
       "route": "/api/profile/activity",
       "path": "harness/server.py",
-      "line": 1798,
+      "line": 1812,
       "handler": "create_app.profile_activity"
     },
     {
       "method": "GET",
       "route": "/api/usage",
       "path": "harness/server.py",
-      "line": 1823,
+      "line": 1837,
       "handler": "create_app.usage"
     },
     {
       "method": "POST",
       "route": "/api/usage/settings",
       "path": "harness/server.py",
-      "line": 1849,
+      "line": 1863,
       "handler": "create_app.usage_settings"
     },
     {
       "method": "GET",
       "route": "/api/skills/catalogue",
       "path": "harness/server.py",
-      "line": 1872,
+      "line": 1886,
       "handler": "create_app.skills_catalogue"
     },
     {
       "method": "GET",
       "route": "/api/skills",
       "path": "harness/server.py",
-      "line": 1877,
+      "line": 1891,
       "handler": "create_app.skills_installed"
     },
     {
       "method": "POST",
       "route": "/api/skills/install",
       "path": "harness/server.py",
-      "line": 1882,
+      "line": 1896,
       "handler": "create_app.skills_install"
     },
     {
       "method": "GET",
       "route": "/api/ready-agents",
       "path": "harness/server.py",
-      "line": 1890,
+      "line": 1904,
       "handler": "create_app.agent_catalogue"
     },
     {
       "method": "GET",
       "route": "/api/agents/catalogue",
       "path": "harness/server.py",
-      "line": 1890,
+      "line": 1904,
       "handler": "create_app.agent_catalogue"
     },
     {
       "method": "GET",
       "route": "/api/workspace/capabilities",
       "path": "harness/server.py",
-      "line": 1943,
+      "line": 1957,
       "handler": "create_app.workspace_capabilities"
     },
     {
       "method": "GET",
       "route": "/api/agents",
       "path": "harness/server.py",
-      "line": 1948,
+      "line": 1962,
       "handler": "create_app.agents_list"
     },
     {
       "method": "POST",
       "route": "/api/agents",
       "path": "harness/server.py",
-      "line": 1969,
+      "line": 1983,
       "handler": "create_app.agents_create"
     },
     {
       "method": "GET",
       "route": "/api/agents/{agent_id}",
       "path": "harness/server.py",
-      "line": 1982,
+      "line": 1996,
       "handler": "create_app.agent_details"
     },
     {
       "method": "POST",
       "route": "/api/agents/{agent_id}/update",
       "path": "harness/server.py",
-      "line": 1986,
+      "line": 2000,
       "handler": "create_app.agent_update"
     },
     {
       "method": "POST",
       "route": "/api/agents/{agent_id}/activate",
       "path": "harness/server.py",
-      "line": 2014,
+      "line": 2028,
       "handler": "create_app.agent_activate"
     },
     {
       "method": "POST",
       "route": "/api/agents/{agent_id}/run",
       "path": "harness/server.py",
-      "line": 2018,
+      "line": 2032,
       "handler": "create_app.agent_run"
     },
     {
       "method": "POST",
       "route": "/api/agents/{agent_id}/pause",
       "path": "harness/server.py",
-      "line": 2022,
+      "line": 2036,
       "handler": "create_app.agent_pause"
     },
     {
       "method": "GET",
       "route": "/api/agents/{agent_id}/runs/{run_id}/report",
       "path": "harness/server.py",
-      "line": 2030,
+      "line": 2044,
       "handler": "create_app.agent_report"
     },
     {
       "method": "POST",
       "route": "/api/chat",
       "path": "harness/server.py",
-      "line": 2053,
+      "line": 2067,
       "handler": "create_app.chat"
     },
     {
       "method": "GET",
       "route": "/api/chats",
       "path": "harness/server.py",
-      "line": 2164,
+      "line": 2178,
       "handler": "create_app.chats"
     },
     {
       "method": "POST",
       "route": "/api/chats/{chat_id}/metadata",
       "path": "harness/server.py",
-      "line": 2173,
+      "line": 2187,
       "handler": "create_app.chat_metadata"
     },
     {
       "method": "GET",
       "route": "/api/chats/{chat_id}",
       "path": "harness/server.py",
-      "line": 2184,
+      "line": 2198,
       "handler": "create_app.child_chat"
     },
     {
       "method": "POST",
       "route": "/api/chats/{chat_id}/approvals/{request_id}",
       "path": "harness/server.py",
-      "line": 2223,
+      "line": 2237,
       "handler": "create_app.answer_native_approval"
     },
     {
       "method": "POST",
       "route": "/api/chats/{chat_id}/questions/{request_id}",
       "path": "harness/server.py",
-      "line": 2256,
+      "line": 2270,
       "handler": "create_app.answer_native_question"
     },
     {
       "method": "POST",
       "route": "/api/chats/{chat_id}/credential-requests/{request_id}",
       "path": "harness/server.py",
-      "line": 2291,
+      "line": 2305,
       "handler": "create_app.answer_credential_request"
     },
     {
       "method": "POST",
       "route": "/api/chat/{chat_id}/stop",
       "path": "harness/server.py",
-      "line": 2336,
+      "line": 2350,
       "handler": "create_app.stop_chat"
     },
     {
       "method": "POST",
       "route": "/api/chat/{chat_id}/steer",
       "path": "harness/server.py",
-      "line": 2353,
+      "line": 2367,
       "handler": "create_app.steer_chat"
     },
     {
       "method": "POST",
       "route": "/api/attachments",
       "path": "harness/server.py",
-      "line": 2375,
+      "line": 2389,
       "handler": "create_app.attachment"
     },
     {
       "method": "GET",
       "route": "/attachments/{attachment_id}.png",
       "path": "harness/server.py",
-      "line": 2394,
+      "line": 2408,
       "handler": "create_app.attachment_image"
     },
     {
       "method": "GET",
       "route": "/api/files",
       "path": "harness/server.py",
-      "line": 2452,
+      "line": 2466,
       "handler": "create_app.list_files"
     },
     {
       "method": "GET",
       "route": "/api/files/{file_id}",
       "path": "harness/server.py",
-      "line": 2471,
+      "line": 2485,
       "handler": "create_app.get_file"
     },
     {
       "method": "GET",
       "route": "/api/files/{file_id}/content",
       "path": "harness/server.py",
-      "line": 2479,
+      "line": 2493,
       "handler": "create_app.file_content"
     },
     {
       "method": "PATCH",
       "route": "/api/files/{file_id}",
       "path": "harness/server.py",
-      "line": 2488,
+      "line": 2502,
       "handler": "create_app.rename_file"
     },
     {
       "method": "POST",
       "route": "/api/files/{file_id}/opened",
       "path": "harness/server.py",
-      "line": 2501,
+      "line": 2515,
       "handler": "create_app.mark_file_opened"
     },
     {
       "method": "GET",
       "route": "/api/files/{file_id}/download",
       "path": "harness/server.py",
-      "line": 2510,
+      "line": 2524,
       "handler": "create_app.download_file"
     },
     {
       "method": "GET",
       "route": "/api/files/{file_id}/preview",
       "path": "harness/server.py",
-      "line": 2529,
+      "line": 2543,
       "handler": "create_app.preview_file"
     },
     {
@@ -41866,56 +41969,56 @@
       "method": "GET",
       "route": "/api/manufacturer/orders/{order_id}/review",
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "line": 145,
+      "line": 147,
       "handler": "register_conversations.get_review"
     },
     {
       "method": "POST",
       "route": "/api/manufacturer/orders/{order_id}/review",
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "line": 150,
+      "line": 152,
       "handler": "register_conversations.prepare_review"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/service-conversation",
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "line": 200,
+      "line": 202,
       "handler": "register_conversations.get_service"
     },
     {
       "method": "POST",
       "route": "/api/manufacturer/service-conversation/messages",
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "line": 205,
+      "line": 207,
       "handler": "register_conversations.send_service"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/conversations/{customer_id}",
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "line": 227,
+      "line": 229,
       "handler": "register_conversations.get_customer"
     },
     {
       "method": "POST",
       "route": "/api/manufacturer/conversations/{customer_id}/messages",
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "line": 233,
+      "line": 235,
       "handler": "register_conversations.send_customer"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/service-conversation/archive",
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "line": 257,
+      "line": 259,
       "handler": "register_conversations.service_archive"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/conversations/{customer_id}/archive",
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "line": 266,
+      "line": 268,
       "handler": "register_conversations.customer_archive"
     },
     {
@@ -41964,133 +42067,133 @@
       "method": "POST",
       "route": "/api/manufacturer/files",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 497,
+      "line": 502,
       "handler": "register_routes.upload_source"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/overview",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 510,
+      "line": 515,
       "handler": "register_routes.overview"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/orders",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 510,
+      "line": 515,
       "handler": "register_routes.overview"
     },
     {
       "method": "POST",
       "route": "/api/manufacturer/orders",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 515,
+      "line": 520,
       "handler": "register_routes.create_order"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/orders/{order_id}",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 523,
+      "line": 528,
       "handler": "register_routes.order"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/orders/{order_id}/files",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 528,
+      "line": 533,
       "handler": "register_routes.order_files"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/orders/{order_id}/files/{file_id}",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 535,
+      "line": 540,
       "handler": "register_routes.order_file"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/orders/{order_id}/files/{file_id}/page/{page}",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 542,
+      "line": 547,
       "handler": "register_routes.order_file_page"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/customers",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 556,
+      "line": 561,
       "handler": "register_routes.customers"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/customers/{customer_id}",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 561,
+      "line": 566,
       "handler": "register_routes.customer"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/configurator",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 566,
+      "line": 571,
       "handler": "register_routes.configurator"
     },
     {
       "method": "POST",
       "route": "/api/manufacturer/configurator",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 571,
+      "line": 576,
       "handler": "register_routes.save_configurator"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/configurator/versions",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 577,
+      "line": 582,
       "handler": "register_routes.versions"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/configurator/versions/{version_id}",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 582,
+      "line": 587,
       "handler": "register_routes.version"
     },
     {
       "method": "POST",
       "route": "/api/manufacturer/configurator/versions/{version_id}/restore",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 587,
+      "line": 592,
       "handler": "register_routes.restore_version"
     },
     {
       "method": "POST",
       "route": "/api/manufacturer/configurator/restore",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 595,
+      "line": 600,
       "handler": "register_routes.restore"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/preview/{version_id}",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 603,
+      "line": 608,
       "handler": "register_routes.preview"
     },
     {
       "method": "GET",
       "route": "/api/manufacturer/team",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 615,
+      "line": 620,
       "handler": "register_routes.team"
     },
     {
       "method": "POST",
       "route": "/api/manufacturer/team",
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "line": 620,
+      "line": 625,
       "handler": "register_routes.update_team"
     },
     {

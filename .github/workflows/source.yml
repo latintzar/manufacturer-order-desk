@@ -39,3 +39,16 @@ jobs:
           else: raise SystemExit('The local workspace did not start.')
           PYWAIT
           python tools/check_browser.py --code-file "$RUNNER_TEMP/manufacturer-first-result/owner-code.txt" --output "$RUNNER_TEMP/manufacturer-browser-proof"
+          kill "$launcher"
+          wait "$launcher" || true
+          python tools/dev.py --guest --base-path /apps/manufacturer-order-desk/ --workspace-port 18780 --orders-port 18781 --state "$RUNNER_TEMP/manufacturer-guest" > "$RUNNER_TEMP/manufacturer-guest.log" 2>&1 &
+          launcher=$!
+          python - <<'PYWAIT'
+          import time, urllib.request
+          for attempt in range(100):
+              try:
+                  with urllib.request.urlopen('http://127.0.0.1:18780/apps/manufacturer-order-desk/', timeout=1): break
+              except OSError: time.sleep(.2)
+          else: raise SystemExit('The mounted native workspace did not start.')
+          PYWAIT
+          python tools/check_browser.py --guest --workspace http://127.0.0.1:18780/apps/manufacturer-order-desk --orders http://127.0.0.1:18780/apps/manufacturer-order-desk/orders --output "$RUNNER_TEMP/manufacturer-guest-browser"

@@ -10,7 +10,7 @@ The final proof runs the source files verified against the release candidate. It
 
 ## Tests
 
-- **279 manufacturer and recipient-configuration checks** cover company scope, capabilities, roles, files, correspondence, immutable snapshots, renderer pinning, publication, restore, staff command retry and private credential/origin handling.
+- **300 manufacturer, recipient and mount checks** cover company scope, capabilities, roles, files, correspondence, immutable snapshots, renderer pinning, publication, restore, staff command retry and private credential/origin handling.
 - **402 Orders checks and 11 subtests** cover the retained generic producer, stores, pricing, specifications, contracts and native request flows. Eleven optional acceptance checks are skipped in the CPU environment.
 - Python source parses, native JavaScript syntax, the agent skill format and local guide/source links pass their gates.
 
@@ -35,7 +35,9 @@ The check consumes a local one-use code. Its screenshots and report stay in `.lo
 
 ## Preview and integration boundary
 
-The distributable native presentation uses authored GET snapshots and the original native components. Its fixture adapter exposes read-only actor permissions, holds mutation requests and uses no authentication cookie or provider key. The runnable source first result supports actual local writes and persistence.
+The hosted native mode runs these same services and databases. A real browse membership opens automatically and supplies read-only actor capabilities. The application serves actual API reads, the original quote calculator, native assets and saved renderer under the configured base path. Main-window `fetch` remains native. Server guards hold writes and observer/session escalation; the scoped native cookie is HttpOnly and SameSite Strict, with Secure on the configured HTTPS origin. The owner mode remains editable.
+
+The mounted real backend was checked across Orders, Customers, Products, Team chat and Configurator at 1600 and 390 pixels, plus order-detail navigation: zero console/page errors, failed assets, broken images or external requests. The quote handler returns €48 gross for two €24 lever sets; the authoritative order count remains two. Twenty-one mount contracts cover URL normalization, canonical JSON writes, font CORS, cookie scope, streaming and read-only enforcement. [Deployment](../deploy/README.md) records the single-server contract.
 
 Recipient-hosted OpenAI, managed authentication, funding, SMTP, Chatwoot, catalogue scraping and production deployment need their own provider configuration and acceptance. Their source and admission mechanisms are retained; the release proof covers local CPU workflows. The optional PostgreSQL journal is included as source and migrations; this result exercises SQLite.
 

@@ -237,6 +237,10 @@ def create_app(state=DEFAULT_STATE, index=None, *, messaging_provider_factory=No
         raise ValueError("Set ROCOTO_BROWSE_SESSIONS to true or false.")
     demo_browsing = (not public_origin if demo_flag is None
                      else demo_flag.strip().lower() in {"1", "true"})
+    auto_browse = os.environ.get('ROCOTO_AUTO_BROWSE', '').strip().lower() == 'true'
+    public_read_only = os.environ.get('ROCOTO_READ_ONLY', '').strip().lower() == 'true'
+    if auto_browse and not demo_browsing:
+        raise ValueError('Automatic visitor admission requires native browse sessions.')
     vertical = active_vertical()
     vertical_host = vertical.import_host()
     agent_factory = agent_factory or HarnessAgent
@@ -683,6 +687,8 @@ def create_app(state=DEFAULT_STATE, index=None, *, messaging_provider_factory=No
         # A copied local browse cookie must not grant access on an invite-only host.
         if session and session.get("role") == "browse" and not demo_browsing:
             session = None
+        if auto_browse and session and session.get('role') != 'browse':
+            session = None
         path = request.url.path
         public = path.startswith(("/vendor/","/connection-brands/")) or path in {"/", "/healthz", "/app.js", "/business-summary.js", "/business-summary.css", "/settings-shell.js", "/settings-shell.css", "/assets/monet-water-lilies.jpg", "/assets/chat-dreamscape.png", "/assets/search-dreamscape.png", "/style.css", "/theme.css", "/brand/rocoto-mark.svg", "/fonts/fraunces/fraunces-latin-500-700.woff2", "/api/session", "/api/session/demo"}
         public = public or (request.method in {"GET", "HEAD"} and path.startswith(("/static/harness/", "/static/vendor/")))
@@ -706,6 +712,10 @@ def create_app(state=DEFAULT_STATE, index=None, *, messaging_provider_factory=No
             except AuthError:
                 session = None
         request.state.session = session
+        if public_read_only and request.method not in {'GET','HEAD'} and not (request.method == 'DELETE' and path == '/api/session'):
+            return JSONResponse({'detail':'Use your own workspace to save changes.'}, status_code=403)
+        if session and session.get('role') == 'browse' and request.method not in {'GET','HEAD'} and path not in {'/api/session','/api/session/demo'}:
+            return JSONResponse({'detail':'Use your own workspace to save changes.'}, status_code=403)
         if not public:
             if not session:
                 return Response("Enter your company access code.",status_code=401)
@@ -1639,12 +1649,16 @@ def create_app(state=DEFAULT_STATE, index=None, *, messaging_provider_factory=No
             headers={'Cache-Control': 'no-store'})
 
     @app.get("/api/session")
-    async def session_info(request: Request):
-        return {**session_details(request.state.session), "demo_browsing":demo_browsing}
+    async def session_info(request: Request, response: Response):
+        session = request.state.session
+        if session is None and auto_browse:
+            token, session = access.login(access.issue('demo', display_name='Visitor'), can_query=False)
+            set_session(response, token, request)
+        return {**session_details(session), "demo_browsing":demo_browsing}
 
     def set_session(response, token, request):
         response.delete_cookie(LEGACY_COOKIE,path="/")
-        response.set_cookie(COOKIE,token,max_age=DAY,httponly=True,samesite="strict",secure=request.url.scheme=="https",path="/")
+        response.set_cookie(COOKIE,token,max_age=DAY,httponly=True,samesite="strict",secure=bool(public_origin) or request.url.scheme=="https",path="/")
 
     register_workspace_auth(app, workspace_auth, public_origin=public_origin,
         session_details=session_details, set_session=set_session)

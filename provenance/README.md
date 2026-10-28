@@ -13,4 +13,6 @@ The Sample Hardware catalogue, two requests and artwork are newly authored relea
 
 `docs/reference/source-index.json` maps the implementation. Dependency notices remain in `THIRD-PARTY.md` and beside vendored assets. The release manifest records final file hashes.
 
+The optional hosted-native mode adds automatic native browse admission, server-enforced read-only access, a portable server URL/cookie mount, isolated runtime HOME and an unprivileged single-server unit. These are published application features; they serve the actual stores, APIs and renderer. The default owner workflow remains editable. The release's earlier external static presentation is reference material.
+
 [made by atelier neyra](https://atelierneyra.com)

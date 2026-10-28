@@ -98,7 +98,7 @@ def test_customer_history_resolves_proposal_confirmation_and_system_metadata(bou
     assert proposal['author_name'] == 'Питър' and proposal['delivery']['status'] == 'pending'
     assert confirmation['order_number'] == '#1042' and confirmation['version'] == 1
     assert confirmation['author_name'] == 'Иван Петров'
-    assert classification['author_name'] == 'Система' and classification['data']['authority'] == 'suggestion'
+    assert classification['author_name'] == 'System' and classification['data']['authority'] == 'suggestion'
     assert messages[-1]['author_name'] == 'Мария Иванова'
     assert client.post('/api/manufacturer/conversations/buyer/messages',json={'text':'Not sent','idempotency_key':'held-message'}).status_code == 503
     assert client.get('/api/manufacturer/conversations/buyer',params={'order_id':'foreign'}).status_code == 404

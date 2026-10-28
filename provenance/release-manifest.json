@@ -9,8 +9,8 @@
   "files": [
     {
       "path": ".github/workflows/source.yml",
-      "bytes": 2138,
-      "sha256": "034df43817fd3256bef4663d275bbdc6ff2533f937b5818a3f46310bc586a93e"
+      "bytes": 3052,
+      "sha256": "2c0c4dbf7ebb41f7f23bf305d66be2de933da3da877e0094e20189ff8daa4256"
     },
     {
       "path": ".gitignore",
@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4419,
-      "sha256": "8c6343b3787b0f2b1ec5f2fbfc4ee1c2bd210023d49de13ce4710d7a91ce1155"
+      "bytes": 4300,
+      "sha256": "49de07ee7ed2e5dda0906928c8e9793b7ba1f3c25782583d70069c2ee363781b"
     },
     {
       "path": "THIRD-PARTY.md",
@@ -1303,6 +1303,16 @@
       "sha256": "ed7a1b505d96bddb4eeaa6ef01aae5862f74795f2322c85f0f6f30d9030b7e92"
     },
     {
+      "path": "deploy/README.md",
+      "bytes": 4678,
+      "sha256": "276e18bfaf858f9a519e4372cc45e057131134bb7aeb8532ba47e33c98e0cc0f"
+    },
+    {
+      "path": "deploy/atelier-manufacturer-order-desk.service",
+      "bytes": 1137,
+      "sha256": "b4188023f3029fa37fcca58c4ac3e20d750033f669f5c8c95d03e0d5240796cc"
+    },
+    {
       "path": "deploy/development/contract.py",
       "bytes": 7100,
       "sha256": "90310f816734475a8033a9fe80d6a507e976243c1fb624574c2eb5c1db515594"
@@ -1319,8 +1329,8 @@
     },
     {
       "path": "docs/SETUP.md",
-      "bytes": 6181,
-      "sha256": "9a69e02db152355ab9dd84ee100c849488377d4b0a0d8d7bb862a13fc941ec35"
+      "bytes": 6644,
+      "sha256": "6debc24fd0bcf275b30a6bac879b35b955e724428af6ed727068d6b5dd8ed36e"
     },
     {
       "path": "docs/UX.md",
@@ -1329,8 +1339,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 4009,
-      "sha256": "86e8c9548e22c81e8c1beff40b66962016c0f09011927ed4e1614d6af89b6fb0"
+      "bytes": 4753,
+      "sha256": "bab528762f09a3472d68e48ae189a95b723f38f8826556ea72ee6ab0269a01c4"
     },
     {
       "path": "docs/images/workspace.png",
@@ -1339,8 +1349,8 @@
     },
     {
       "path": "docs/reference/index.md",
-      "bytes": 75538,
-      "sha256": "2a6e5a948578419402725b2c169df5929326f02dcbe2249cbba6ddb3c562824a"
+      "bytes": 75696,
+      "sha256": "262e9096ef227f3d093945d27c24c8a198b3546f0cbffad30c6c4c3b68670c2a"
     },
     {
       "path": "docs/reference/orders-schema.sql",
@@ -1349,8 +1359,8 @@
     },
     {
       "path": "docs/reference/source-index.json",
-      "bytes": 1118458,
-      "sha256": "f4a2312a004682841a105b780844df5713ee41971f3d6b80b8c28f6dbeabadc7"
+      "bytes": 1120945,
+      "sha256": "d9bc95f88acedbb3a7be854f975e82e797c8a40ad0d54e538836febf2cc2cc99"
     },
     {
       "path": "fixtures/sample-hardware/images/cylinder.webp",
@@ -1454,8 +1464,8 @@
     },
     {
       "path": "harness/mechanics/access.py",
-      "bytes": 13491,
-      "sha256": "cdd3f6bfeaf269ca7b31a5fde15b9957d32cd11e10bee0657c05ac6f69a3c8e6"
+      "bytes": 13672,
+      "sha256": "d305595e5b00d7fd977b32d013832a5e28d7ef5dba87b8c03ea5b431d311013f"
     },
     {
       "path": "harness/mechanics/agent_bridge.py",
@@ -1898,6 +1908,11 @@
       "sha256": "0cbd903ceb91063447a41e239ca47e82ee00370928c8fdb115916944c1745cb3"
     },
     {
+      "path": "harness/mechanics/web_mount.py",
+      "bytes": 12128,
+      "sha256": "39d930cb73bab60cd40c283f5531cfad3447b32c393e95fed9f3f4ad8cc0d277"
+    },
+    {
       "path": "harness/mechanics/workspace_auth.py",
       "bytes": 24826,
       "sha256": "8dec23f141bca6116c9578d1bdffde77b2930cad9dfb736dc0971725196f8ca0"
@@ -2179,8 +2194,8 @@
     },
     {
       "path": "harness/server.py",
-      "bytes": 152404,
-      "sha256": "2c788f9d80dd1968728aa5c542b2f131c9a3588f021e4a342ed523a1261edc0a"
+      "bytes": 153565,
+      "sha256": "59e06ff80bd3521337e2ed5497896ac5e8b108ddf34e03057abd8f5bb713a1d2"
     },
     {
       "path": "harness/tests/conftest.py",
@@ -2279,8 +2294,8 @@
     },
     {
       "path": "harness/tests/test_manufacturer_conversation_routes.py",
-      "bytes": 6325,
-      "sha256": "30a56b5978ee4d253d9438cd002dd0421830e63ef640c738f91c60eaf50aced2"
+      "bytes": 6317,
+      "sha256": "a031fe3393668759ac7e543ee5199f9e5e75aa4e219471249e2dbf365b76ef12"
     },
     {
       "path": "harness/tests/test_manufacturer_conversations.py",
@@ -2464,8 +2479,8 @@
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
-      "bytes": 17087,
-      "sha256": "f167c46bec08f17157bed9a156780b98287298b6416ed512434112c3113edf82"
+      "bytes": 17120,
+      "sha256": "36b8c6139e0d2e95a881dea90e2dd5478777823133110702a98cdaf38b8b80a0"
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_conversations.py",
@@ -2489,8 +2504,8 @@
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_host.py",
-      "bytes": 35144,
-      "sha256": "754fe3b04aef233586de9fd2369bc0a5be58665cfcd6559c501dfd8f57a5a40a"
+      "bytes": 35395,
+      "sha256": "f91804f6f4a9eb12675f68c7a699d0e4695c88da320d45188ac7556cb0bd379f"
     },
     {
       "path": "harness/verticals/manufacturer/manufacturer_mail.py",
@@ -2639,8 +2654,8 @@
     },
     {
       "path": "harness/verticals/manufacturer/web/manufacturer-conversations.js",
-      "bytes": 16279,
-      "sha256": "d1f26692e140e60529abb32df8f6a293d23c31c4860e9c2466ace5961af370e7"
+      "bytes": 16314,
+      "sha256": "bc767c4eb9c45ec75f370eab54766052835b0c347790cef6f82b5567ac63199b"
     },
     {
       "path": "harness/verticals/manufacturer/web/manufacturer-customer-portal.css",
@@ -3344,8 +3359,8 @@
     },
     {
       "path": "provenance/README.md",
-      "bytes": 1896,
-      "sha256": "a92370dc96446ce5d54b54d07dca2296ada6a47b6807cb64393438d8a2c8eadc"
+      "bytes": 2311,
+      "sha256": "8de2d6b0eab5f55a57ddeba044bd87204be127eb6bb4ce5e611a169a008040ec"
     },
     {
       "path": "provenance/generic-extraction.json",
@@ -3368,6 +3383,11 @@
       "sha256": "8c3c1b7c8c03e5a8697b41f0d3625d28a15bb0bc9dbcdd6fd965a2f6645fb922"
     },
     {
+      "path": "provenance/runtime-update.json",
+      "bytes": 3581,
+      "sha256": "4e284212a3b3a6b4289182602f31f086e538850e27835f8ae2bd0019c2eda61f"
+    },
+    {
       "path": "provenance/secret-scan-disposition.json",
       "bytes": 557,
       "sha256": "b07b5f415972e197946042019f9f5a1cb0c030e2f0c1046a6167779d1dd8a29f"
@@ -3388,14 +3408,19 @@
       "sha256": "7d21ef9ca2b1a9190b53813ba4c61fefd0c3326a572d1a4328bef2731627ad2e"
     },
     {
+      "path": "tests/test_web_mount.py",
+      "bytes": 7271,
+      "sha256": "d73ca32eb3a7c2653f05df09d44120b8de4c8460f8f3cdded5ee082726a18341"
+    },
+    {
       "path": "tools/bind.py",
       "bytes": 1751,
       "sha256": "e39e230391049fec9e18b97386949e87f77f6c69cea726cca0b3ac464242f88f"
     },
     {
       "path": "tools/check_browser.py",
-      "bytes": 2866,
-      "sha256": "9eded3aab6a086f4fd8fcf9d2d74f7e430f716fb1fd785a7bf1489671ba9a6eb"
+      "bytes": 4309,
+      "sha256": "0b94ec4c9d18421f8b4e06114022cdba1fb0b6f47b0f58cdcb792ac480138fb9"
     },
     {
       "path": "tools/configure.py",
@@ -3404,8 +3429,8 @@
     },
     {
       "path": "tools/dev.py",
-      "bytes": 4506,
-      "sha256": "56d76c96283bcf9c6e7749c9863d13dfe928c2b9f5a071602959c28069ae2f04"
+      "bytes": 6749,
+      "sha256": "4a466ac8794311ed32179457cce94c9e0bca52e4827c2360f57aa64ccd0e9102"
     },
     {
       "path": "tools/offline.py",

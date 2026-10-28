@@ -19,7 +19,7 @@
     text.placeholder=customerId?'Write to the customer…':'Write to your team…';text.setAttribute('aria-label','Message');text.maxLength=12000;text.rows=3;send.type='submit';send.disabled=true;notice.hidden=true;notice.setAttribute('role','status');
     try{if(draftKey){text.value=sessionStorage.getItem(draftKey)||'';pending=JSON.parse(sessionStorage.getItem(draftKey+':submission')||'null');}}catch{}
     footer.append(channel,send);form.append(to,text,footer);shell.append(header,history,notice,form);root.replaceChildren(shell); window.RocotoManufacturerFooter?.(shell);
-    function keepDraft(){try{if(draftKey){if(text.value)sessionStorage.setItem(draftKey,text.value);else sessionStorage.removeItem(draftKey);}}catch{}send.disabled=!current()||!ready||!text.value.trim()||loading||Boolean(customerId&&data?.delivery_ready!==true);}
+    function keepDraft(){form.hidden=data?.can_send===false;try{if(draftKey){if(text.value)sessionStorage.setItem(draftKey,text.value);else sessionStorage.removeItem(draftKey);}}catch{}send.disabled=!current()||!ready||!text.value.trim()||loading||Boolean(customerId&&data?.delivery_ready!==true);}
     function resizeText(){text.style.height='auto';text.style.height=Math.min(160,text.scrollHeight)+'px';}
     text.addEventListener('input',()=>{keepDraft();resizeText();});
     text.addEventListener('keydown',event=>{if(event.key==='Enter'&&(event.metaKey||event.ctrlKey)){event.preventDefault();form.requestSubmit();}});

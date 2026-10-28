@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "base_commit": "5f3047640060f72db839886188e70e8889ff6145",
+  "purpose": "Run the same native app under a portable base path with real backend reads and opt-in native read-only visitor membership. Default owner mode retains real edits and publication.",
+  "delivery": [
+    "server-side URL and cookie mounting; browser fetch remains native",
+    "native automatic browse admission with genuine company read identity",
+    "global server and mount read-only guards including observer/session escalation",
+    "owned runtime HOME/config/cache and stripped provider environment",
+    "single-server unprivileged systemd unit; Vitrina is proof only",
+    "guest and owner browser CI; canonical JSON writes, streaming and CORS contracts"
+  ],
+  "shared_mount_sha256": "39d930cb73bab60cd40c283f5531cfad3447b32c393e95fed9f3f4ad8cc0d277",
+  "files": [
+    {
+      "path": ".github/workflows/source.yml",
+      "sha256": "2c0c4dbf7ebb41f7f23bf305d66be2de933da3da877e0094e20189ff8daa4256"
+    },
+    {
+      "path": "deploy/README.md",
+      "sha256": "276e18bfaf858f9a519e4372cc45e057131134bb7aeb8532ba47e33c98e0cc0f"
+    },
+    {
+      "path": "deploy/atelier-manufacturer-order-desk.service",
+      "sha256": "b4188023f3029fa37fcca58c4ac3e20d750033f669f5c8c95d03e0d5240796cc"
+    },
+    {
+      "path": "docs/SETUP.md",
+      "sha256": "6debc24fd0bcf275b30a6bac879b35b955e724428af6ed727068d6b5dd8ed36e"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "bab528762f09a3472d68e48ae189a95b723f38f8826556ea72ee6ab0269a01c4"
+    },
+    {
+      "path": "docs/reference/index.md",
+      "sha256": "262e9096ef227f3d093945d27c24c8a198b3546f0cbffad30c6c4c3b68670c2a"
+    },
+    {
+      "path": "docs/reference/source-index.json",
+      "sha256": "d9bc95f88acedbb3a7be854f975e82e797c8a40ad0d54e538836febf2cc2cc99"
+    },
+    {
+      "path": "harness/mechanics/access.py",
+      "sha256": "d305595e5b00d7fd977b32d013832a5e28d7ef5dba87b8c03ea5b431d311013f"
+    },
+    {
+      "path": "harness/mechanics/web_mount.py",
+      "sha256": "39d930cb73bab60cd40c283f5531cfad3447b32c393e95fed9f3f4ad8cc0d277"
+    },
+    {
+      "path": "harness/server.py",
+      "sha256": "59e06ff80bd3521337e2ed5497896ac5e8b108ddf34e03057abd8f5bb713a1d2"
+    },
+    {
+      "path": "harness/tests/test_manufacturer_conversation_routes.py",
+      "sha256": "a031fe3393668759ac7e543ee5199f9e5e75aa4e219471249e2dbf365b76ef12"
+    },
+    {
+      "path": "harness/verticals/manufacturer/manufacturer_conversation_routes.py",
+      "sha256": "36b8c6139e0d2e95a881dea90e2dd5478777823133110702a98cdaf38b8b80a0"
+    },
+    {
+      "path": "harness/verticals/manufacturer/manufacturer_host.py",
+      "sha256": "f91804f6f4a9eb12675f68c7a699d0e4695c88da320d45188ac7556cb0bd379f"
+    },
+    {
+      "path": "harness/verticals/manufacturer/web/manufacturer-conversations.js",
+      "sha256": "bc767c4eb9c45ec75f370eab54766052835b0c347790cef6f82b5567ac63199b"
+    },
+    {
+      "path": "provenance/README.md",
+      "sha256": "8de2d6b0eab5f55a57ddeba044bd87204be127eb6bb4ce5e611a169a008040ec"
+    },
+    {
+      "path": "tests/test_web_mount.py",
+      "sha256": "d73ca32eb3a7c2653f05df09d44120b8de4c8460f8f3cdded5ee082726a18341"
+    },
+    {
+      "path": "tools/check_browser.py",
+      "sha256": "0b94ec4c9d18421f8b4e06114022cdba1fb0b6f47b0f58cdcb792ac480138fb9"
+    },
+    {
+      "path": "tools/dev.py",
+      "sha256": "4a466ac8794311ed32179457cce94c9e0bca52e4827c2360f57aa64ccd0e9102"
+    }
+  ],
+  "manifest": "release-manifest.json is regenerated and self-excluded; base README is preserved."
+}
