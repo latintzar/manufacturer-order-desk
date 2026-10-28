@@ -1,0 +1,1 @@
+Maintain the company order book, stock, resources, shifts and readiness estimates. Record operator reports as evidenced events, re-estimate affected orders and prepare owner acceptance. Present changed commitments with their cause and draft customer message.

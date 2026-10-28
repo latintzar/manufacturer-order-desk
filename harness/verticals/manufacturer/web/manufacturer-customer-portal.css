@@ -1,0 +1,87 @@
+/* The public customer page uses the host's commissioned theme tokens. */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--surface); font: 14px/1.5 var(--font, system-ui, sans-serif); -webkit-font-smoothing: antialiased; }
+#portal { width: min(100% - 48px, 800px); margin: 64px auto 80px; }
+button, a, textarea { -webkit-tap-highlight-color: transparent; }
+button, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: wait; opacity: .6; }
+:is(button, a, textarea):focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+h1, h2, p, dl, dd { margin: 0; }
+h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.2; font-weight: 550; letter-spacing: -.8px; }
+h2 { font-size: 15px; line-height: 1.4; font-weight: 550; }
+svg { width: 20px; height: 20px; flex-shrink: 0; }
+.portal-header { margin-bottom: 28px; }
+.portal-brand { font-size: 13px; font-weight: 550; margin-bottom: 28px; }
+.portal-subtitle { margin-top: 10px; color: var(--muted); overflow-wrap: anywhere; }
+.portal-meta { display: flex; align-items: center; gap: 12px; margin-top: 22px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+.portal-badge { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); background: var(--paper); color: var(--ink); border-radius: 6px; padding: 5px 9px; font-weight: 500; }
+.portal-badge svg { width: 15px; height: 15px; }
+.portal-card { border: 1px solid var(--border); border-radius: 12px; padding: 24px; background: var(--paper); margin-bottom: 16px; }
+.portal-products { list-style: none; padding: 0; margin: 6px 0 0; }
+.portal-product { display: grid; grid-template-columns: 60px minmax(0,1fr) auto; align-items: center; gap: 16px; padding: 22px 0; }
+.portal-product + .portal-product { border-top: 1px solid var(--border); }
+.portal-product:last-child { padding-bottom: 0; }
+.portal-product-image { display: grid; place-items: center; width: 60px; height: 72px; border-radius: 6px; overflow: hidden; background: var(--surface); color: var(--muted); }
+.portal-product-image img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+.portal-product-image svg { width: 25px; height: 25px; }
+.portal-product-copy { min-width: 0; display: grid; gap: 3px; overflow-wrap: anywhere; }
+.portal-product-copy strong, .portal-line-total { font-weight: 550; }
+.portal-product-code, .portal-product-description, .portal-unit-price { color: var(--muted); font-size: 12px; }
+.portal-product-code { font-variant-numeric: tabular-nums; }
+.portal-product-amounts { display: grid; justify-items: end; gap: 3px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.portal-line-total { margin-top: 4px; }
+.portal-totals { width: min(100%, 300px); margin: 24px 0 0 auto; border-top: 1px solid var(--border); padding-top: 16px; }
+.portal-detail { display: flex; justify-content: space-between; gap: 28px; margin-top: 10px; }
+.portal-detail dt { color: var(--muted); }
+.portal-detail dd { text-align: right; overflow-wrap: anywhere; }
+.portal-totals .portal-detail { font-variant-numeric: tabular-nums; }
+.portal-totals dd { white-space: nowrap; }
+.portal-totals .portal-detail:last-child { font-size: 16px; font-weight: 550; color: var(--ink); }
+.portal-delivery dl { margin-top: 16px; }
+.portal-delivery .portal-detail { justify-content: start; }
+.portal-delivery dt { flex: 0 0 130px; }
+.portal-delivery dd { text-align: left; white-space: pre-wrap; }
+.portal-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding-top: 8px; }
+.portal-button { display: inline-flex; justify-content: center; align-items: center; gap: 8px; min-height: 46px; border: 1px solid var(--border); border-radius: 8px; padding: 11px 16px; background: var(--paper); color: var(--ink); font-weight: 500; text-decoration: none; line-height: 22px; transition: background 120ms ease; }
+.portal-button:hover { background: var(--surface); }
+.portal-button.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.portal-button.primary:hover { background: color-mix(in srgb, var(--ink) 88%, var(--paper)); }
+.portal-footnote { flex-basis: 100%; font-size: 12px; line-height: 1.6; color: var(--muted); margin-top: 4px; }
+.portal-feedback { flex-basis: 100%; font-size: 13px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-top: 12px; }
+.portal-confirmed-note { flex: 1; }
+.portal-error { margin-top: 16px; color: var(--muted); }
+.portal-sheet { width: min(520px, calc(100% - 32px)); max-height: calc(100dvh - 32px); overflow: auto; margin: auto; padding: 24px; border: 1px solid var(--border); border-radius: 16px; background: var(--paper); color: var(--ink); box-shadow: 0 16px 80px color-mix(in srgb, var(--ink) 16%, transparent); }
+.portal-sheet::backdrop { background: color-mix(in srgb, var(--ink) 26%, transparent); }
+.portal-sheet-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.icon-button { width: 44px; min-width: 44px; height: 44px; padding: 10px; margin: -8px -8px -8px 0; border-color: transparent; }
+.portal-sheet form { display: grid; gap: 12px; }
+.portal-sheet label { font-size: 13px; }
+.portal-sheet textarea { width: 100%; min-height: 128px; max-height: 42dvh; resize: vertical; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--paper); color: var(--ink); line-height: 1.5; }
+.portal-sheet textarea::placeholder { color: var(--muted); }
+.portal-sheet form > .portal-button { margin-top: 4px; }
+#portal.portal-phone { max-width: 440px; }
+.phone-card { text-align: center; padding: 32px 24px; }
+.phone-mark { width: 56px; height: 56px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 14px; margin: 0 auto 20px; background: var(--surface); }
+.phone-mark svg { width: 25px; height: 25px; }
+.phone-number { font-size: clamp(22px, 6vw, 28px); font-variant-numeric: tabular-nums; margin: 8px 0 24px; white-space: nowrap; }
+.phone-card > .portal-button { width: 100%; margin-top: 8px; }
+.portal-phone > .portal-footnote { text-align: center; }
+.skeleton { background: color-mix(in srgb, var(--ink) 7%, var(--paper)); border-radius: 8px; margin-bottom: 20px; animation: pulse 1.4s ease-in-out infinite alternate; }
+.skeleton.short { width: 110px; height: 16px; }.skeleton.title { width: 60%; height: 34px; margin: 30px 0; }.skeleton.block { height: 180px; }
+@keyframes pulse { to { opacity: .45; } }
+@media (max-width: 600px) {
+  #portal { width: calc(100% - 32px); margin: 28px auto 40px; }
+  .portal-brand { margin-bottom: 24px; }.portal-header { margin-bottom: 22px; }
+  .portal-card { padding: 18px; border-radius: 10px; }.portal-product { grid-template-columns: 48px minmax(0,1fr); gap: 12px; padding: 18px 0; }
+  .portal-product-image { width: 48px; height: 60px; grid-row: span 2; align-self: start; }
+  .portal-product-amounts { grid-column: 2; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 10px; }
+  .portal-unit-price { flex-basis: 100%; order: 3; }.portal-line-total { margin: 0; }
+  .portal-detail { gap: 16px; }.portal-delivery .portal-detail { display: grid; gap: 3px; margin-top: 14px; }
+  .portal-actions > .portal-button { width: 100%; }.portal-footnote { margin-top: 6px; }
+  .portal-confirmed-note { flex-basis: 100%; margin-bottom: 4px; }
+  .portal-sheet { width: 100%; max-width: 100%; margin: auto 0 0; max-height: calc(100dvh - 24px); border-radius: 18px 18px 0 0; padding: 22px 20px max(24px, env(safe-area-inset-bottom)); border-bottom: 0; }
+  .portal-sheet textarea { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }

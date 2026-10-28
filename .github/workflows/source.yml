@@ -1,0 +1,41 @@
+name: Source and native browser checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Install CPU dependencies
+        run: |
+          python -m pip install -r requirements.lock playwright==1.58.0
+          python -m pip check
+          python -m playwright install --with-deps chromium
+      - name: Manufacturer and recipient contracts
+        run: ROCOTO_VERTICAL=manufacturer PYTHONPATH="$PWD/tools/test_sandbox" python -m pytest -q harness/tests/test_manufacturer_*.py tests
+      - name: Orders contracts
+        run: PYTHONPATH="$PWD/tools/test_sandbox" python -m pytest -q app/src/prototypes/orders/tests
+      - name: Current SDK recipe and fake-provider delegation
+        run: PYTHONPATH="$PWD/tools/test_sandbox" ORDERS_MANAGED_HARNESS_SOURCE="$PWD/harness" python -m pytest -q app/src/prototypes/orders/tests/test_manufacturer_recipes.py::test_current_recipe_get_begin_record_scope_and_fake_provider_delegation
+      - name: Native local first result
+        run: |
+          python tools/dev.py --state "$RUNNER_TEMP/manufacturer-first-result" > "$RUNNER_TEMP/manufacturer-first-result.log" 2>&1 &
+          launcher=$!
+          trap 'kill "$launcher" 2>/dev/null || true; wait "$launcher" || true' EXIT
+          python - <<'PYWAIT'
+          import time, urllib.request
+          for attempt in range(100):
+              try:
+                  with urllib.request.urlopen('http://127.0.0.1:18580/', timeout=1): break
+              except OSError: time.sleep(.2)
+          else: raise SystemExit('The local workspace did not start.')
+          PYWAIT
+          python tools/check_browser.py --code-file "$RUNNER_TEMP/manufacturer-first-result/owner-code.txt" --output "$RUNNER_TEMP/manufacturer-browser-proof"

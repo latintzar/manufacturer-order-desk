@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Orders · Rocoto</title>
+    <link rel="stylesheet" href="/theme.css" />
+    <link rel="stylesheet" href="/manufacturer/orders.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Rocoto home">
+        <img src="/brand/rocoto-mark.svg" alt="" />
+        <span class="wordmark">Rocoto</span>
+      </a>
+      <nav aria-label="Workspace">
+        <a href="/">Home</a>
+        <a href="/manufacturer/orders" aria-current="page">Orders</a>
+      </nav>
+      <button id="office" type="button">Open Office</button>
+    </header>
+
+    <main>
+      <header class="page-heading">
+        <div>
+          <p class="eyebrow">Company store</p>
+          <h1>Orders</h1>
+          <p>Current requests, prices and delivery dates recorded by the company.</p>
+        </div>
+        <button id="refresh" class="secondary" type="button">Refresh</button>
+      </header>
+
+      <p id="message" class="message" role="status">Loading orders…</p>
+      <section id="orders" class="orders" aria-live="polite"></section>
+      <div class="pagination"><button id="more" class="secondary" type="button" hidden>Load more</button></div>
+    </main>
+
+    <script src="/manufacturer/orders.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+Onboard this company from its URL using the manufacturer-run stages. Maintain its identity, sources, catalogue, members and pending claim. Keep catalogue adapters with this company and preserve a reusable template.

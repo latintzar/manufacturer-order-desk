@@ -1,0 +1,100 @@
+{
+  "about": "The laser estimate, worked by hand. laser_quote.py and laser_quote.mjs both answer exactly `expect`.",
+  "tariff": {
+    "currency": "EUR",
+    "vat": 0.2,
+    "setup": 12.0,
+    "minimum": 15.0,
+    "rates": {
+      "steel": {"kg": 1.2, "cut": [0.45, 0.55, 1.1], "pierce": [0.03, 0.04, 0.09]},
+      "brass": {"kg": 10.5, "cut": [0.95, 1.2], "pierce": [0.05, 0.06]}
+    }
+  },
+  "materials": [
+    {"id": "steel", "density": 7850, "thicknesses": [1, 2, 5]},
+    {"id": "brass", "density": 8450, "thicknesses": [1, 2]}
+  ],
+  "vectors": [
+    {
+      "what": "a 100 mm square with a 20 mm round hole, one piece: the minimum applies",
+      "work": "0.157 kg x 1.20 = 0.19; 0.46283 m x 0.55 = 0.25; 2 x 0.04 = 0.08; setup 12.00; 12.52 is under the 15.00 minimum",
+      "measure": {"bounds": {"w": 100.0, "h": 100.0}, "cut": {"length_mm": 462.83, "pierces": 2}},
+      "material": "steel", "thickness": 2, "quantity": 1,
+      "expect": {"ok": true, "quantity": 1, "weight_kg": 0.157, "material": 0.19, "cutting": 0.25, "piercing": 0.08,
+                 "setup": 12.0, "minimum": true, "piece": 15.0, "net": 15.0, "vat": 3.0, "gross": 18.0,
+                 "vat_rate": 0.2, "currency": "EUR"}
+    },
+    {
+      "what": "the same square, fifty pieces: setup is paid once",
+      "work": "0.157 x 1.20 x 50 = 9.42; 0.46283 x 0.55 x 50 = 12.73; 2 x 0.04 x 50 = 4.00; 12.00; net 38.15; VAT 7.63",
+      "measure": {"bounds": {"w": 100.0, "h": 100.0}, "cut": {"length_mm": 462.83, "pierces": 2}},
+      "material": "steel", "thickness": 2, "quantity": 50,
+      "expect": {"ok": true, "quantity": 50, "weight_kg": 0.157, "material": 9.42, "cutting": 12.73, "piercing": 4.0,
+                 "setup": 12.0, "minimum": false, "piece": 0.76, "net": 38.15, "vat": 7.63, "gross": 45.78,
+                 "vat_rate": 0.2, "currency": "EUR"}
+    },
+    {
+      "what": "the constellation plate in 2 mm steel",
+      "work": "2.512 kg x 1.20 = 3.01; 2.05229 m x 0.55 = 1.13; 16 x 0.04 = 0.64; 12.00; net 16.78; VAT 3.36",
+      "measure": {"bounds": {"w": 400.0, "h": 400.0}, "cut": {"length_mm": 2052.29, "pierces": 16}},
+      "material": "steel", "thickness": 2, "quantity": 1,
+      "expect": {"ok": true, "quantity": 1, "weight_kg": 2.512, "material": 3.01, "cutting": 1.13, "piercing": 0.64,
+                 "setup": 12.0, "minimum": false, "piece": 16.78, "net": 16.78, "vat": 3.36, "gross": 20.14,
+                 "vat_rate": 0.2, "currency": "EUR"}
+    },
+    {
+      "what": "three brass pieces of 1 mm",
+      "work": "0.274625 kg x 10.50 x 3 = 8.65; 1.2345 m x 0.95 x 3 = 3.52; 7 x 0.05 x 3 = 1.05; 12.00; net 25.22; VAT 5.04",
+      "measure": {"bounds": {"w": 250.0, "h": 130.0}, "cut": {"length_mm": 1234.5, "pierces": 7}},
+      "material": "brass", "thickness": 1, "quantity": 3,
+      "expect": {"ok": true, "quantity": 3, "weight_kg": 0.275, "material": 8.65, "cutting": 3.52, "piercing": 1.05,
+                 "setup": 12.0, "minimum": false, "piece": 8.41, "net": 25.22, "vat": 5.04, "gross": 30.26,
+                 "vat_rate": 0.2, "currency": "EUR"}
+    },
+    {
+      "what": "the largest quantity, in 5 mm steel",
+      "work": "0.471 kg x 1.20 x 999 = 564.63; 0.46283 m x 1.10 x 999 = 508.60; 2 x 0.09 x 999 = 179.82; 12.00; net 1265.05; VAT 253.01",
+      "measure": {"bounds": {"w": 100.0, "h": 120.0}, "cut": {"length_mm": 462.83, "pierces": 2}},
+      "material": "steel", "thickness": 5, "quantity": 999,
+      "expect": {"ok": true, "quantity": 999, "weight_kg": 0.471, "material": 564.63, "cutting": 508.6, "piercing": 179.82,
+                 "setup": 12.0, "minimum": false, "piece": 1.27, "net": 1265.05, "vat": 253.01, "gross": 1518.06,
+                 "vat_rate": 0.2, "currency": "EUR"}
+    },
+    {
+      "what": "a thickness the material is sold without",
+      "measure": {"bounds": {"w": 100.0, "h": 100.0}, "cut": {"length_mm": 462.83, "pierces": 2}},
+      "material": "steel", "thickness": 3, "quantity": 1,
+      "expect": {"ok": false}
+    },
+    {
+      "what": "a quantity of zero",
+      "measure": {"bounds": {"w": 100.0, "h": 100.0}, "cut": {"length_mm": 462.83, "pierces": 2}},
+      "material": "steel", "thickness": 2, "quantity": 0,
+      "expect": {"ok": false}
+    },
+    {
+      "what": "a quantity above the ceiling",
+      "measure": {"bounds": {"w": 100.0, "h": 100.0}, "cut": {"length_mm": 462.83, "pierces": 2}},
+      "material": "steel", "thickness": 2, "quantity": 1000,
+      "expect": {"ok": false}
+    },
+    {
+      "what": "half a piece",
+      "measure": {"bounds": {"w": 100.0, "h": 100.0}, "cut": {"length_mm": 462.83, "pierces": 2}},
+      "material": "steel", "thickness": 2, "quantity": 2.5,
+      "expect": {"ok": false}
+    },
+    {
+      "what": "a material the tariff holds no price for",
+      "measure": {"bounds": {"w": 100.0, "h": 100.0}, "cut": {"length_mm": 462.83, "pierces": 2}},
+      "material": "copper", "thickness": 2, "quantity": 1,
+      "expect": {"ok": false}
+    },
+    {
+      "what": "a drawing without a measured cut length",
+      "measure": {"bounds": {"w": 100.0, "h": 100.0}, "cut": {"pierces": 2}},
+      "material": "steel", "thickness": 2, "quantity": 1,
+      "expect": {"ok": false}
+    }
+  ]
+}

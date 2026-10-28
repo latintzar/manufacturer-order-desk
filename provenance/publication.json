@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "reviewed_archive_sha256": "08a3f966cb8b933864fef18a3d9522ea1ea6e8936669a3c7ca40af4e272d4d22",
+  "reviewed_manifest_sha256": "74286c05c7736be819d37feeb15d162e2fceacec1e9b067e8a0b9f7882a7836b",
+  "changes": [
+    {
+      "path": ".github/workflows/source.yml",
+      "reviewed_sha256": null,
+      "published_sha256": "034df43817fd3256bef4663d275bbdc6ff2533f937b5818a3f46310bc586a93e"
+    },
+    {
+      "path": "README.md",
+      "reviewed_sha256": "9c7bff06ad93da7dd07df2ce6d50b346ff484fd5998f86fe05259cef8d8fe067",
+      "published_sha256": "8c6343b3787b0f2b1ec5f2fbfc4ee1c2bd210023d49de13ce4710d7a91ce1155"
+    },
+    {
+      "path": "tools/test_sandbox/sitecustomize.py",
+      "reviewed_sha256": null,
+      "published_sha256": "3b9ef1610f8671b432e883723d84f716e23948600dd5e9f513c0fd22b151b364"
+    }
+  ],
+  "delivery": "Fresh personal public repository; original history, private state and credentials excluded. README adds clone/start entry and public guide/preview links. CI uses the tested CPU runtime and native browser checker with a loopback test boundary.",
+  "manifest": "release-manifest.json is regenerated for these publication files and excludes itself."
+}

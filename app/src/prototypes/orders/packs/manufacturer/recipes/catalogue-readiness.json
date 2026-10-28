@@ -1,0 +1,46 @@
+[
+  {
+    "id": "catalogue_readiness",
+    "revision": "catalogue_readiness-1",
+    "title": "Catalogue and readiness review",
+    "job": "Review catalogue evidence and operational readiness without changing company records.",
+    "instructions": "prompts/catalogue-readiness.md",
+    "launched_by": [
+      "organization",
+      "office"
+    ],
+    "steps": [
+      {
+        "id": "catalogue",
+        "title": "Read catalogue evidence",
+        "instructions": "Read every product, price basis, MOQ, quantity step, selling rule and worked example. A source-specific parser is company state; every row has an outcome and evidence. Resolve conflicts by dated canonical source.",
+        "agent": "catalogue_reader",
+        "tools": [
+          "catalog_find",
+          "catalog_read",
+          "run_stage_plan",
+          "run_read"
+        ],
+        "after": [],
+        "done_when": "The catalogue gate has been evaluated against recorded source evidence; conflicts and missing evidence remain explicit."
+      },
+      {
+        "id": "readiness",
+        "title": "Judge operational readiness",
+        "instructions": "Evaluate existing evidence for the store stage without ingesting facts, reserving stock, booking capacity or changing company records. Read the source goal as the subject of review: Ingest facts with sources, prices with history, unknown stock as listed, capacity as assumed, MOQ and steps. Export the exact catalogue projection. Estimate from stock, calendar and capacity; acceptance reserves and books atomically. Verify every original dependency in run_stage_plan before judging its gate.",
+        "agent": "readiness_judge",
+        "tools": [
+          "catalog_read",
+          "quote_ready",
+          "run_stage_plan",
+          "run_read"
+        ],
+        "after": [
+          "catalogue"
+        ],
+        "done_when": "The store gate and every dependency in the original stage plan have current evidence, or readiness is recorded as blocked with the missing evidence."
+      }
+    ],
+    "done_when": "Catalogue coverage and operational readiness are recorded from current evidence, with unresolved gates left blocked."
+  }
+]

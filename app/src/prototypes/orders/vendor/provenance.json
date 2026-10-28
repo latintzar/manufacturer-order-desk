@@ -1,0 +1,11 @@
+{
+  "three_url": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js",
+  "three_version": "0.160.0",
+  "three_sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+  "licence": "https://raw.githubusercontent.com/mrdoob/three.js/r160/LICENSE",
+  "Inter": {
+    "source_commit": "12d77d610c82a21c602a7706861f043e16607a74",
+    "path": "app/public/inter.woff2",
+    "notice": "app/public/inter-OFL.txt"
+  }
+}

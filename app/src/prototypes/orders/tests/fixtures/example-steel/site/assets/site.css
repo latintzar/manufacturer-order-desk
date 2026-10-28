@@ -1,0 +1,2 @@
+@font-face { font-family: Example; src: url("../assets/example.woff2?v=2") format("woff2"); }
+body { font-family: Example, sans-serif; background: url(/assets/paper.svg); }

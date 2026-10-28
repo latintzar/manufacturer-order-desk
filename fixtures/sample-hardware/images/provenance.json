@@ -1,0 +1,26 @@
+{
+  "description": "Authored fictional hardware sample catalogue artwork",
+  "created": "2026-10-28",
+  "tool": "Built-in image generation",
+  "real_manufacturer_catalogue": false,
+  "images": [
+    {
+      "name": "lever",
+      "prompt": "Create one polished unbranded catalogue illustration for a fictional door-hardware manufacturer used in an open-source software sample. Single object centred with generous clear margin, three-quarter product view, physically plausible construction, soft studio light, crisp realistic metal surfaces, quiet neutral silver/brass palette, subtle contact shadow. Transparent background. No text, lettering, numbers, company marks, badges, frames, UI or extra objects. The product is illustrative sample data, not a real manufacturer's product. Render a compact horizontal 4:3 composition. Subject: a satin nickel door lever handle mounted on its circular rosette, one complete visible handle assembly.",
+      "file": "lever.webp",
+      "original_file": "lever.png"
+    },
+    {
+      "name": "latch",
+      "prompt": "Create one polished unbranded catalogue illustration for a fictional door-hardware manufacturer used in an open-source software sample. Single object centred with generous clear margin, three-quarter product view, physically plausible construction, soft studio light, crisp realistic metal surfaces, quiet neutral silver/brass palette, subtle contact shadow. Transparent background. No text, lettering, numbers, company marks, badges, frames, UI or extra objects. The product is illustrative sample data, not a real manufacturer's product. Render a compact horizontal 4:3 composition. Subject: one compact mortice door latch mechanism, rectangular metal case with rounded faceplate, projecting latch tongue and square spindle opening.",
+      "file": "latch.webp",
+      "original_file": "latch.png"
+    },
+    {
+      "name": "cylinder",
+      "prompt": "Create one polished unbranded catalogue illustration for a fictional door-hardware manufacturer used in an open-source software sample. Single object centred with generous clear margin, three-quarter product view, physically plausible construction, soft studio light, crisp realistic metal surfaces, quiet neutral silver/brass palette, subtle contact shadow. Transparent background. No text, lettering, numbers, company marks, badges, frames, UI or extra objects. The product is illustrative sample data, not a real manufacturer's product. Render a compact horizontal 4:3 composition. Subject: one brass Euro-profile double lock cylinder, horizontal, clear Euro-profile cross section and central fixing hole.",
+      "file": "cylinder.webp",
+      "original_file": "cylinder.png"
+    }
+  ]
+}

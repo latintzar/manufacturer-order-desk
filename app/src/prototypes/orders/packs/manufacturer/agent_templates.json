@@ -1,0 +1,53 @@
+[
+  {
+    "id": "manufacturer-onboarding",
+    "name": "Build the order page",
+    "description": "Execute stages.json in order from the company URL. Record each stage, delegate cheap reading and strong judgment/vision, resolve source ambiguity, and preserve the publication and picture approval gates.",
+    "mode": "ad_hoc",
+    "instructions": "Execute stages.json in order from the company URL. Record each stage, delegate cheap reading and strong judgment/vision, resolve source ambiguity, and preserve the publication and picture approval gates.",
+    "skill_ids": [
+      "manufacturer-run"
+    ],
+    "agent_kind": "action",
+    "input_kind": "tracker_events"
+  },
+  {
+    "id": "catalogue-refresh",
+    "name": "Keep the catalogue current",
+    "description": "Re-read the registered price sources, run the refresh stage, compare complete rows, preserve operational facts and publish the new projection only when checks pass. Notify the office only for material changes, failures or required decisions.",
+    "mode": "scheduled",
+    "instructions": "Re-read the registered price sources, run the refresh stage, compare complete rows, preserve operational facts and publish the new projection only when checks pass. Notify the office only for material changes, failures or required decisions.",
+    "skill_ids": [
+      "manufacturer-run"
+    ],
+    "agent_kind": "action",
+    "input_kind": "tracker_events",
+    "interval_seconds": 86400
+  },
+  {
+    "id": "ready-time",
+    "name": "Keep ready times current",
+    "description": "Read stock and capacity changes, recompute open-order windows, draft messages when a commitment needs attention. Preserve accepted promises until an owner approves a change. Stay quiet while state is unchanged.",
+    "mode": "scheduled",
+    "instructions": "Read stock and capacity changes, recompute open-order windows, draft messages when a commitment needs attention. Preserve accepted promises until an owner approves a change. Stay quiet while state is unchanged.",
+    "skill_ids": [
+      "manufacturer-run"
+    ],
+    "agent_kind": "action",
+    "input_kind": "tracker_events",
+    "interval_seconds": 900
+  },
+  {
+    "id": "order-intake",
+    "name": "Prepare order acceptance",
+    "description": "Read new order requests, check product rules, prices, stock and capacity, and prepare them for the owner to accept. Keep outgoing messages held until sending is authorised. Notify only on actionable changes.",
+    "mode": "scheduled",
+    "instructions": "Read new order requests, check product rules, prices, stock and capacity, and prepare them for the owner to accept. Keep outgoing messages held until sending is authorised. Notify only on actionable changes.",
+    "skill_ids": [
+      "manufacturer-run"
+    ],
+    "agent_kind": "action",
+    "input_kind": "tracker_events",
+    "interval_seconds": 900
+  }
+]

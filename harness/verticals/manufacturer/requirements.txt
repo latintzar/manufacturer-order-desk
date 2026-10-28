@@ -1,0 +1,2 @@
+# Source PDFs are read in a bounded subprocess; shared document/spreadsheet libraries come from the harness.
+PyMuPDF==1.27.2.2

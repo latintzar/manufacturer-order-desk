@@ -1,0 +1,167 @@
+{
+  "schema": "rocoto.vertical.v1",
+  "id": "manufacturer",
+  "revision": "manufacturer-service-4",
+  "product": {
+    "name": "Manufacturer order desk",
+    "capability_name": "Catalogue and orders",
+    "summary": "Incoming order research and a shared, versioned company configurator.",
+    "business": "Manufacturer"
+  },
+  "prompts": {
+    "system": "prompts/system.md",
+    "fixed_chat_common": null
+  },
+  "fixed_chats": [
+    {
+      "purpose": "organization",
+      "title": "Chat",
+      "icon": "building",
+      "job": "Maintain the company configurator and source-backed catalogue from shared files; coordinate incoming order research.",
+      "prompt": "prompts/organization.md"
+    }
+  ],
+  "agent_classes": [
+    {
+      "kind": "action",
+      "authority": "granted_effects",
+      "default": true,
+      "label": "Agent",
+      "plural": "Agents",
+      "icon": "skill",
+      "create_label": "New agent",
+      "empty_label": "Your agents appear here.",
+      "starter_prompt": "Help me create an agent. Define its job, inputs, schedule, tools and limits.",
+      "input_kinds": [
+        "none",
+        "order_research"
+      ]
+    }
+  ],
+  "event_vocabulary": null,
+  "skills": null,
+  "tool_families": [
+    "manufacturer_tools:FAMILY",
+    "research_tools:FAMILY"
+  ],
+  "surfaces": [
+    {
+      "id": "orders",
+      "title": "Orders",
+      "nav": "primary",
+      "tabs": [
+        {
+          "id": "order_log",
+          "title": "Orders",
+          "display": "list",
+          "content": "Incoming order requests with customer research",
+          "produced_by": "the read-only company order database and admitted research jobs",
+          "read_with": "manufacturer_orders"
+        }
+      ]
+    },
+    {
+      "id": "customers",
+      "title": "Customers",
+      "nav": "primary",
+      "tabs": [
+        {
+          "id": "customer_timeline",
+          "title": "Customers",
+          "display": "list",
+          "content": "Company profiles and their request timelines",
+          "produced_by": "submitted orders and source-supported company research",
+          "read_with": "manufacturer_orders"
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "title": "Products",
+      "nav": "primary",
+      "tabs": [
+        {
+          "id": "product_catalogue",
+          "title": "Products",
+          "display": "list",
+          "content": "Source-backed products and shared versioned unit prices",
+          "produced_by": "the company catalogue and admitted manual or agent changes",
+          "read_with": "manufacturer_configurator"
+        }
+      ]
+    },
+    {
+      "id": "configurator",
+      "title": "Configurator",
+      "nav": "primary",
+      "tabs": [
+        {
+          "id": "configurator_settings",
+          "title": "Configurator",
+          "display": "list",
+          "content": "Shared configurator editor and immutable version history",
+          "produced_by": "manual edits and the company agent",
+          "read_with": "manufacturer_configurator"
+        }
+      ]
+    },
+    {
+      "id": "company",
+      "title": "Company & people",
+      "nav": "secondary",
+      "tabs": [
+        {
+          "id": "team_settings",
+          "title": "Company & people",
+          "display": "list",
+          "content": "Native company members and invitation drafts",
+          "produced_by": "the company owner and native membership service",
+          "read_with": "manufacturer_team"
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "title": "Team chat",
+      "nav": "primary",
+      "tabs": [
+        {
+          "id": "service_conversation",
+          "title": "Team chat",
+          "display": "list",
+          "content": "Service conversation with your team",
+          "produced_by": "workspace members and their service operator",
+          "read_with": "manufacturer_overview"
+        }
+      ]
+    }
+  ],
+  "connections_expected": [],
+  "data_sources": [
+    {
+      "id": "company_orders",
+      "title": "Company orders",
+      "read_with": [
+        "manufacturer_orders",
+        "manufacturer_order"
+      ]
+    },
+    {
+      "id": "configurator_versions",
+      "title": "Configurator history",
+      "read_with": [
+        "manufacturer_configurator",
+        "manufacturer_versions",
+        "manufacturer_version"
+      ]
+    }
+  ],
+  "flow": [],
+  "demo": null,
+  "builtin_capabilities": {},
+  "recipes": "recipes/research.json",
+  "sub_agents": "sub_agents.json",
+  "tile_sets": [],
+  "ready_agents": "recipes/research-agent.json",
+  "host_module": "manufacturer_host"
+}

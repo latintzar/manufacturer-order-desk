@@ -1,0 +1,23 @@
+{
+  "idempotency_key": "authored-native-contract-20261028",
+  "customer": {
+    "company": "Example Retail",
+    "name": "Sample buyer",
+    "email": "buyer@example.test",
+    "language": "en",
+    "warehouseId": "varna-main",
+    "needBy": ""
+  },
+  "lines": [
+    {
+      "article": "101081",
+      "quantity": 2
+    }
+  ],
+  "fulfilment": "pickup",
+  "original_file": {
+    "filename": "native-release-qa.txt",
+    "content_type": "text/plain",
+    "content_base64": "QXV0aG9yZWQgc2FtcGxlIHNwZWNpZmljYXRpb24gZm9yIHRoZSBuYXRpdmUgcmVxdWVzdCBjb250cmFjdC4K"
+  }
+}

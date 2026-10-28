@@ -1,0 +1,641 @@
+{
+ "catalogue": {
+  "company": {
+   "bg": "Example",
+   "en": "Example"
+  },
+  "currency": "EUR",
+  "vat": 0.2,
+  "asOf": "",
+  "source": "https://example.test/",
+  "metals": [
+   {
+    "id": "lock",
+    "bg": "Брава",
+    "en": "Lock"
+   }
+  ],
+  "forms": [
+   {
+    "id": "locks",
+    "bg": "Брави",
+    "en": "Locks"
+   },
+   {
+    "id": "handles",
+    "bg": "Дръжки",
+    "en": "Handles"
+   }
+  ],
+  "rules": {},
+  "cats": [
+   {
+    "code": "t1",
+    "form": "locks",
+    "metal": "lock",
+    "shape": "special",
+    "bg": "Брава А",
+    "en": "Lock A",
+    "img": "",
+    "url": {},
+    "items": [
+     {
+      "c": "L-PZ-50",
+      "s": "L-PZ-50",
+      "p": 0,
+      "q": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      },
+      "a": {
+       "use": [
+        "interior",
+        "entrance"
+       ],
+       "fn": [
+        "PZ"
+       ],
+       "size": 50
+      }
+     },
+     {
+      "c": "L-WC-50",
+      "s": "L-WC-50",
+      "p": 0,
+      "q": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      },
+      "a": {
+       "use": [
+        "interior"
+       ],
+       "fn": [
+        "BAD"
+       ],
+       "size": 50
+      }
+     },
+     {
+      "c": "L-WC-40",
+      "s": "L-WC-40",
+      "p": 0,
+      "q": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      },
+      "a": {
+       "use": [
+        "interior"
+       ],
+       "fn": [
+        "BAD"
+       ],
+       "size": 40
+      }
+     },
+     {
+      "c": "L-PZ-35",
+      "s": "L-PZ-35",
+      "p": 0,
+      "q": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      },
+      "a": {
+       "use": [
+        "entrance"
+       ],
+       "fn": [
+        "PZ"
+       ],
+       "size": 35
+      }
+     },
+     {
+      "c": "L-ANY",
+      "s": "L-ANY",
+      "p": 0,
+      "q": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      },
+      "a": {
+       "use": [
+        "interior"
+       ],
+       "fn": [
+        "BAD"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "code": "t2",
+    "form": "handles",
+    "metal": "lock",
+    "shape": "special",
+    "bg": "Дръжка Б",
+    "en": "Handle B",
+    "img": "/p/b.jpg",
+    "url": {},
+    "items": [
+     {
+      "c": "H-C-SATIN",
+      "s": "H-C-SATIN",
+      "p": 0,
+      "q": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      },
+      "a": {
+       "purpose": [
+        "C"
+       ],
+       "colour": [
+        "satin"
+       ]
+      }
+     },
+     {
+      "c": "H-C-CHROME",
+      "s": "H-C-CHROME",
+      "p": 0,
+      "q": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      },
+      "a": {
+       "purpose": [
+        "C"
+       ],
+       "colour": [
+        "chrome"
+       ]
+      }
+     },
+     {
+      "c": "H-B-SATIN",
+      "s": "H-B-SATIN",
+      "p": 0,
+      "q": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      },
+      "a": {
+       "purpose": [
+        "B"
+       ],
+       "colour": [
+        "satin"
+       ]
+      }
+     },
+     {
+      "c": "PLAIN",
+      "s": "x",
+      "p": 1,
+      "L": 0,
+      "w": 0,
+      "cut": 0,
+      "u": "pc",
+      "r": {
+       "k": "whole"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "questionnaire": {
+  "id": "set",
+  "title": {
+   "bg": "Намерете брава",
+   "en": "Намерете брава"
+  },
+  "start": {
+   "bg": "Започни",
+   "en": "Започни"
+  },
+  "questions": [
+   {
+    "id": "door",
+    "kind": "single",
+    "title": {
+     "bg": "Врата",
+     "en": "Врата"
+    },
+    "options": [
+     {
+      "id": "interior",
+      "label": {
+       "bg": "Вътрешна",
+       "en": "Вътрешна"
+      },
+      "match": {
+       "use": [
+        "interior"
+       ]
+      }
+     },
+     {
+      "id": "entrance",
+      "label": {
+       "bg": "Входна",
+       "en": "Входна"
+      },
+      "match": {
+       "use": [
+        "entrance"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "lock",
+    "kind": "single",
+    "title": {
+     "bg": "Заключване",
+     "en": "Заключване"
+    },
+    "options": [
+     {
+      "id": "pz",
+      "label": {
+       "bg": "Патрон",
+       "en": "Патрон"
+      },
+      "match": {
+       "fn": [
+        "PZ"
+       ],
+       "purpose": [
+        "B"
+       ]
+      }
+     },
+     {
+      "id": "wc",
+      "label": {
+       "bg": "Баня",
+       "en": "Баня"
+      },
+      "when": {
+       "door": [
+        "interior"
+       ]
+      },
+      "match": {
+       "fn": [
+        "BAD"
+       ],
+       "purpose": [
+        "C"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "size",
+    "kind": "single",
+    "unsure": true,
+    "show": "cells",
+    "title": {
+     "bg": "Размер",
+     "en": "Размер"
+    },
+    "unit": {
+     "bg": "мм",
+     "en": "мм"
+    },
+    "options": [
+     {
+      "id": "35",
+      "label": {
+       "bg": "35",
+       "en": "35"
+      },
+      "match": {
+       "size": [
+        35
+       ]
+      }
+     },
+     {
+      "id": "40",
+      "label": {
+       "bg": "40",
+       "en": "40"
+      },
+      "match": {
+       "size": [
+        40
+       ]
+      }
+     },
+     {
+      "id": "50",
+      "label": {
+       "bg": "50",
+       "en": "50"
+      },
+      "match": {
+       "size": [
+        50
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "colour",
+    "kind": "multiple",
+    "unsure": true,
+    "title": {
+     "bg": "Покритие",
+     "en": "Покритие"
+    },
+    "when": {
+     "door": [
+      "interior"
+     ]
+    },
+    "options": [
+     {
+      "id": "satin",
+      "label": {
+       "bg": "Сатин",
+       "en": "Сатин"
+      },
+      "match": {
+       "colour": [
+        "satin"
+       ]
+      }
+     },
+     {
+      "id": "chrome",
+      "label": {
+       "bg": "Хром",
+       "en": "Хром"
+      },
+      "match": {
+       "colour": [
+        "chrome"
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "result": {
+   "groups": [
+    {
+     "title": {
+      "bg": "Брава",
+      "en": "Брава"
+     },
+     "category": [
+      "locks"
+     ]
+    },
+    {
+     "title": {
+      "bg": "Дръжка",
+      "en": "Дръжка"
+     },
+     "category": "handles",
+     "when": {
+      "door": [
+       "interior"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "cases": [
+  {
+   "name": "nothing answered asks the first question",
+   "answers": {},
+   "next": "door",
+   "asked": [
+    "door"
+   ]
+  },
+  {
+   "name": "an entrance door offers one lock, which answers itself",
+   "answers": {
+    "door": [
+     "entrance"
+    ]
+   },
+   "next": "size",
+   "auto": [
+    "lock"
+   ],
+   "live": {
+    "size": [
+     "35",
+     "50"
+    ]
+   }
+  },
+  {
+   "name": "a WC lock offers only the sizes it is made in",
+   "answers": {
+    "door": [
+     "interior"
+    ],
+    "lock": [
+     "wc"
+    ]
+   },
+   "next": "size",
+   "live": {
+    "size": [
+     "40",
+     "50"
+    ]
+   }
+  },
+  {
+   "name": "a row without the attribute stays and ranks last",
+   "answers": {
+    "door": [
+     "interior"
+    ],
+    "lock": [
+     "wc"
+    ],
+    "size": [
+     "50"
+    ],
+    "colour": [
+     "satin"
+    ]
+   },
+   "next": null,
+   "result": {
+    "Брава": [
+     "L-WC-50",
+     "L-ANY"
+    ],
+    "Дръжка": [
+     "H-C-SATIN"
+    ]
+   }
+  },
+  {
+   "name": "unsure narrows nothing",
+   "answers": {
+    "door": [
+     "interior"
+    ],
+    "lock": [
+     "wc"
+    ],
+    "size": [
+     "?"
+    ],
+    "colour": [
+     "?"
+    ]
+   },
+   "next": null,
+   "result": {
+    "Брава": [
+     "L-WC-50",
+     "L-WC-40",
+     "L-ANY"
+    ],
+    "Дръжка": [
+     "H-C-SATIN",
+     "H-C-CHROME"
+    ]
+   }
+  },
+  {
+   "name": "several chosen options widen",
+   "answers": {
+    "door": [
+     "interior"
+    ],
+    "lock": [
+     "wc"
+    ],
+    "size": [
+     "40"
+    ],
+    "colour": [
+     "satin",
+     "chrome"
+    ]
+   },
+   "next": null,
+   "result": {
+    "Брава": [
+     "L-WC-40",
+     "L-ANY"
+    ],
+    "Дръжка": [
+     "H-C-SATIN",
+     "H-C-CHROME"
+    ]
+   }
+  },
+  {
+   "name": "a group's condition hides it; the one handle finish answers itself",
+   "answers": {
+    "door": [
+     "entrance"
+    ],
+    "size": [
+     "35"
+    ]
+   },
+   "next": null,
+   "result": {
+    "Брава": [
+     "L-PZ-35"
+    ]
+   }
+  },
+  {
+   "name": "an answer that is no longer offered counts as open",
+   "answers": {
+    "door": [
+     "entrance"
+    ],
+    "lock": [
+     "wc"
+    ],
+    "size": [
+     "40"
+    ]
+   },
+   "next": "size"
+  },
+  {
+   "name": "an interior door with a cylinder has one handle finish",
+   "answers": {
+    "door": [
+     "interior"
+    ],
+    "lock": [
+     "pz"
+    ],
+    "size": [
+     "50"
+    ]
+   },
+   "next": null,
+   "auto": [
+    "colour"
+   ],
+   "result": {
+    "Брава": [
+     "L-PZ-50"
+    ],
+    "Дръжка": [
+     "H-B-SATIN"
+    ]
+   }
+  }
+ ]
+}

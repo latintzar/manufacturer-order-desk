@@ -1,0 +1,18 @@
+{
+  "source": "Metal-M Sofia: the surcharge table on https://www.metal-m.bg/bg/metali-i-formi/ applied to the list prices of 11 October 2026",
+  "partLengthTable": {"6": {"1": 0.5, "2": 0.4, "3": 0.3, "4": 0.2, "5": 0.1}, "12": {"3": 0.5, "6": 0.3, "9": 0.2}},
+  "examples": [
+    {"what": "2 m of a 6 m bar", "code": "01-00061", "size": "40х40х4", "shape": "sq_tube", "price": 30.97, "stock": 6,
+     "sold": "1-2-3-4-5", "rule": {"k": "len", "l": [1, 2, 3, 4, 5, 6]}, "ask": {"length": 2000, "pieces": 1}, "eur": 14.45},
+    {"what": "3 m of a 6 m bar", "code": "01-00061", "size": "40х40х4", "shape": "sq_tube", "price": 30.97, "stock": 6,
+     "sold": "1-2-3-4-5", "rule": {"k": "len", "l": [1, 2, 3, 4, 5, 6]}, "ask": {"length": 3000, "pieces": 1}, "eur": 20.13},
+    {"what": "6 m of a 12 m beam", "code": "01-70016", "size": "100 IPE", "shape": "ipe", "price": 113.72, "stock": 12,
+     "sold": "3-6-9", "rule": {"k": "len", "l": [3, 6, 9, 12]}, "ask": {"length": 6000, "pieces": 1}, "eur": 73.92},
+    {"what": "a 1000 x 500 strip of a 1000 x 2000 sheet", "code": "01-30005", "size": "2.0х1000х2000 S235JR", "shape": "sheet",
+     "price": 34.78, "stock": 0, "sold": "1000 х L", "rule": {"k": "strip"}, "dims": [2, 1000, 2000],
+     "ask": {"a": 1000, "b": 500, "pieces": 1}, "eur": 10.43},
+    {"what": "half of a 1000 x 2000 sheet", "code": "01-30005", "size": "2.0х1000х2000 S235JR", "shape": "sheet",
+     "price": 34.78, "stock": 0, "sold": "1000 х L", "rule": {"k": "strip"}, "dims": [2, 1000, 2000],
+     "ask": {"a": 1000, "b": 1000, "pieces": 1}, "eur": 17.39}
+  ]
+}

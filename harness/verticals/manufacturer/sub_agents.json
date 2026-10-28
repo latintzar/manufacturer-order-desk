@@ -1,0 +1,15 @@
+[
+  {
+    "id": "research_reader",
+    "title": "Customer research reader",
+    "job": "Read submitted business context and existing sourced findings for one company order.",
+    "instructions": "prompts/research-reader.md",
+    "launched_by": ["organization", "action"],
+    "tools": ["get_order_research"],
+    "model": "gpt-6-astra",
+    "effort": "low",
+    "limit_cents": 20,
+    "timeout_seconds": 180,
+    "per_turn": 1
+  }
+]

@@ -1,0 +1,68 @@
+/* The questionnaire: one question per screen in the order page's own sheet. It reuses the page's components
+   (.q, .prog, .opts/.opt, .szs/.sz, .line, .lt, .stp, .i-bar, .act) and adds only what they lack. */
+.ask-b{padding:20px 0 0}
+.ask-banner{display:flex;align-items:center;gap:16px;width:100%;min-height:72px;padding:14px 14px 14px 18px;border-radius:var(--r);background:#fff;box-shadow:inset 0 0 0 1px var(--line-2);transition:box-shadow 150ms var(--ease)}
+.ask-banner:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.ask-banner .tx{flex:1;min-width:0;display:block}
+.ask-banner b{display:block;font-weight:600;font-size:16px;line-height:22px;letter-spacing:-.012em;text-wrap:balance}
+.ask-banner small{display:block;margin-top:2px;font-size:13px;line-height:18px;color:var(--soft);text-wrap:pretty}
+.ask-banner .go{display:flex;align-items:center;gap:8px;flex:none;height:44px;padding:0 14px 0 18px;border-radius:var(--r);background:var(--accent);color:var(--ink);font-weight:600;font-size:15px;line-height:20px;white-space:nowrap}
+.ask-banner:hover .go svg{transform:translateX(2px)}
+.ask-banner .go svg{transition:transform 150ms var(--ease)}
+.r[data-on="light"] .act:not(:disabled),.r[data-on="light"] .ask-banner .go,.r[data-on="light"] .mcart>span,.r[data-on="light"] .it:hover .plus,.r[data-on="light"] .launch .go{color:#fff}
+.ask .co-scroll{padding-bottom:32px}
+.ask-q h1+.opts,.ask-q h1+.szs,.ask-q h1+.ask-tiles,.ask-q h1+.ask-draw{margin-top:24px}
+.ask-q .q-sub+.opts,.ask-q .q-sub+.szs,.ask-q .q-sub+.ask-tiles,.ask-q .q-sub+.ask-draw{margin-top:20px}
+.ask-draw{display:grid;place-items:center;height:156px;margin-bottom:12px;border-radius:var(--r);background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.ask-draw svg{display:block;height:136px;width:auto}
+.ask-draw text{font-family:inherit;font-weight:600;font-size:13px;fill:#1a1c1f}
+.ask-opts .opt{grid-template-columns:18px 48px minmax(0,1fr) auto;min-height:64px}
+.ask-opts .opt.plain{grid-template-columns:18px minmax(0,1fr) auto}
+.ask-opts .opt .oi{width:48px;height:48px;border-radius:var(--r-2)}
+.ask-opts .opt .oi.ph{background:#fff;box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
+.ask-opts .opt .oi img{display:block;width:100%;height:100%;object-fit:cover}
+.ask-opts .opt.many .rd{display:grid;place-items:center;border-radius:5px;color:transparent}
+.ask-opts .opt.many[aria-checked="true"] .rd{background:var(--ink);color:#fff;box-shadow:none}
+.kbd{display:grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:var(--r-2);box-shadow:inset 0 0 0 1px var(--line-2);font-size:12px!important;line-height:16px!important;font-weight:500;color:var(--faint)}
+.ask-cells .sz{height:48px;font-size:15px;line-height:20px}
+.ask-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.ask-tile{display:grid;gap:6px;padding:6px 6px 8px;border-radius:var(--r);background:#fff;box-shadow:inset 0 0 0 1px var(--line-2);text-align:center;transition:box-shadow 120ms var(--ease)}
+.ask-tile:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.ask-tile[aria-checked="true"]{box-shadow:inset 0 0 0 2px var(--ink)}
+.ask-tile .ph{display:block;aspect-ratio:1/1;border-radius:var(--r-2);overflow:hidden;background:#fff}
+.ask-tile img{display:block;width:100%;height:100%;object-fit:cover}
+.ask-tile b{font-weight:500;font-size:13px;line-height:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ask-unsure{min-height:44px;margin-top:8px;padding:0 2px}
+.ask-unsure[aria-pressed="true"]{text-decoration:underline;text-underline-offset:3px}
+.ask-r{max-width:600px;padding-top:clamp(20px,5dvh,48px)}
+.ask-sum{display:flex;flex-wrap:wrap;align-items:center;gap:4px 0;margin-top:10px;font-size:13px;line-height:18px;color:var(--soft)}
+.ask-sum span:not(:first-child)::before{content:"·";margin:0 6px;color:var(--faint)}
+.ask-sum .lnk{margin-left:12px;min-height:28px;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.ask-g{margin-top:24px}
+.ask-g h3{padding-bottom:6px;font-weight:600;font-size:14px;line-height:20px;border-bottom:1px solid var(--line)}
+.ask-row{align-items:center}
+.ask-row.off b,.ask-row.off small{color:var(--soft)}
+.ask-row.off .lt{opacity:.72}
+.ask-row .stp button:disabled{color:var(--faint);cursor:default;background:none}
+.ask-more{min-height:44px}
+.ask .i-bar .act{min-width:260px}
+@media (max-width:900px){
+  .ask-b{padding-top:16px}
+  .ask-banner{flex-wrap:wrap;gap:12px;padding:14px}
+  .ask-banner .tx{flex:1 1 100%}
+  .ask-banner .go{flex:1;justify-content:center;height:48px}
+  .ask-q h1+.opts,.ask-q h1+.szs,.ask-q h1+.ask-tiles,.ask-q h1+.ask-draw{margin-top:20px}
+  .ask-opts .opt,.ask-opts .opt.plain{min-height:64px}
+  .ask-opts .opt{grid-template-columns:18px 48px minmax(0,1fr)}
+  .ask-opts .opt.plain{grid-template-columns:18px minmax(0,1fr)}
+  .kbd{display:none}
+  .ask-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .ask-draw{height:132px}.ask-draw svg{height:116px}
+  .ask .i-bar .act{min-width:0}
+}
+@media (max-width:440px){
+  .ask .i-bar .act .lg{display:inline}
+  .ask .i-bar .act .sh{display:none}
+  .ask .i-bar .tot{display:none}
+  .ask .i-bar .act{flex:1}
+}

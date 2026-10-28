@@ -1,0 +1,44 @@
+[
+  {
+    "id": "catalogue_reader",
+    "title": "Catalogue reader",
+    "job": "Read catalogue coverage and source evidence for a manufacturer run.",
+    "instructions": "prompts/catalogue-reader.md",
+    "launched_by": [
+      "organization",
+      "office"
+    ],
+    "tools": [
+      "catalog_find",
+      "catalog_read",
+      "run_stage_plan",
+      "run_read"
+    ],
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "limit_cents": 20,
+    "timeout_seconds": 180,
+    "per_turn": 1
+  },
+  {
+    "id": "readiness_judge",
+    "title": "Readiness judge",
+    "job": "Judge catalogue and operational readiness from recorded evidence.",
+    "instructions": "prompts/readiness-judge.md",
+    "launched_by": [
+      "organization",
+      "office"
+    ],
+    "tools": [
+      "catalog_read",
+      "quote_ready",
+      "run_stage_plan",
+      "run_read"
+    ],
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "limit_cents": 30,
+    "timeout_seconds": 180,
+    "per_turn": 1
+  }
+]

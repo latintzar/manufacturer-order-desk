@@ -1,0 +1,93 @@
+# Each customer receives a separate project, credentials, network and volumes.
+name: ${CHATWOOT_PROJECT:?Set a unique customer project name}
+x-app: &app
+  image: chatwoot/chatwoot:v4.18.0-ce@sha256:faaa58a911cda8f2ab9d717ddf8ca4332163b07da4c5da10711d896e5d667442
+  env_file: .env
+  environment:
+    RAILS_ENV: production
+    NODE_ENV: production
+    INSTALLATION_ENV: docker
+    CW_EDITION: ce
+    POSTGRES_HOST: postgres
+    POSTGRES_DATABASE: chatwoot
+    POSTGRES_USERNAME: chatwoot
+    # v4.18 reads REDIS_PASSWORD separately from env_file for Redis and ActionCable.
+    REDIS_URL: redis://redis:6379
+    ACTIVE_STORAGE_SERVICE: local
+    ENABLE_ACCOUNT_SIGNUP: "false"
+    RAILS_MAX_THREADS: "2"
+    WEB_CONCURRENCY: "0"
+    SIDEKIQ_CONCURRENCY: "2"
+    # Upstream uses sendmail when SMTP_ADDRESS is blank. Keep an explicit closed sink.
+    SMTP_ADDRESS: 127.0.0.1
+    SMTP_PORT: "1"
+    SMTP_OPEN_TIMEOUT: "1"
+    SMTP_READ_TIMEOUT: "1"
+    SMTP_ENABLE_STARTTLS_AUTO: "true"
+    SMTP_OPENSSL_VERIFY_MODE: peer
+    LOG_LEVEL: warn
+  volumes:
+    - storage:/app/storage
+    - ./operator:/operator
+  networks: [backend, egress]
+  restart: unless-stopped
+  logging:
+    driver: json-file
+    options: {max-size: "10m", max-file: "3"}
+services:
+  rails:
+    <<: *app
+    entrypoint: docker/entrypoints/rails.sh
+    command: [bundle, exec, rails, s, -p, "3000", -b, 0.0.0.0]
+    ports: ["127.0.0.1:${CHATWOOT_PORT:-3110}:3000"]
+    mem_limit: 1280m
+    cpus: 1.0
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+  sidekiq:
+    <<: *app
+    command: [bundle, exec, sidekiq, -C, config/sidekiq.yml]
+    mem_limit: 1280m
+    cpus: 1.0
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+  postgres:
+    image: pgvector/pgvector:pg16@sha256:7b822b0aac60967beb1ea5e576b8602c94c300a157d187f385ae3e0da199b90a
+    environment:
+      POSTGRES_DB: chatwoot
+      POSTGRES_USER: chatwoot
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Generate the private instance environment}
+    volumes: ["postgres:/var/lib/postgresql/data"]
+    networks: [backend]
+    restart: unless-stopped
+    mem_limit: 768m
+    cpus: 0.75
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U chatwoot -d chatwoot"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  redis:
+    image: redis:7.4.6-alpine@sha256:3b73847e72874be07e6657b129a94761662b79bc0f679273757d4218573b2a98
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?Generate the private instance environment}
+    command: [sh, -c, 'exec redis-server --requirepass "$$REDIS_PASSWORD" --appendonly yes --maxmemory 128mb --maxmemory-policy noeviction']
+    volumes: ["redis:/data"]
+    networks: [backend]
+    restart: unless-stopped
+    mem_limit: 256m
+    cpus: 0.25
+    healthcheck:
+      test: [CMD-SHELL, 'REDISCLI_AUTH="$$REDIS_PASSWORD" redis-cli ping']
+      interval: 10s
+      timeout: 5s
+      retries: 10
+networks:
+  backend: {internal: true}
+  egress: {}
+volumes:
+  postgres: {}
+  redis: {}
+  storage: {}

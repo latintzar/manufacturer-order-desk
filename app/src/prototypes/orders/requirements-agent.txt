@@ -1,0 +1,2 @@
+# Optional local agent host; the order server and deterministic refresh do not need this SDK.
+openai-agents==0.23.1

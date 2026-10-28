@@ -1,0 +1,25 @@
+{
+  "slug": "example-steel",
+  "name": {"en": "Example Steel", "de": "Beispiel Stahl"},
+  "source": "https://example-steel.test/",
+  "priceList": {"url": "https://example-steel.test/price-list/", "path": "price-list/index.html"},
+  "currency": "EUR",
+  "vat": 0.19,
+  "languages": {"en": "/", "de": "/de/"},
+  "defaultLanguage": "en",
+  "home": {"en": "index.html", "de": "de/index.html"},
+  "accent": "#1f6feb",
+  "logo": "/assets/logo.svg",
+  "tableHook": "table.prices",
+  "orderPrefix": "EX",
+  "delivery": 20,
+  "hours": {"1": [480, 1020, 960], "2": [480, 1020, 960], "3": [480, 1020, 960], "4": [480, 1020, 960], "5": [480, 960, 900]},
+  "shop": {"backlog": 60},
+  "strings": {
+    "en": {"pickup": "Pickup in Exampletown, 1 Mill Road", "pickSub": "Exampletown, 1 Mill Road", "pickAddr": "Exampletown, 1 Mill Road", "delFee": "Delivery in Exampletown"},
+    "de": {"pickup": "Abholung in Beispielstadt, Werkstraße 1", "pickSub": "Beispielstadt, Werkstraße 1", "pickAddr": "Beispielstadt, Werkstraße 1", "delFee": "Lieferung in Beispielstadt"}
+  },
+  "geo": {"regions": ["de"]},
+  "drop": ["assets/paper.svg"],
+  "check": {"search": "40x40x3", "category": "T1"}
+}

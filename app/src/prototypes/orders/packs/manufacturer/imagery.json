@@ -1,0 +1,223 @@
+{
+  "schema": "rocoto.manufacturer.imagery.v1",
+  "revision": "one-angle-shared-studio-2026-10-11-7",
+  "scraping": {
+    "executor": "script",
+    "fallback_model_profile": "reader",
+    "describe_images": false,
+    "record": [
+      "asset_id",
+      "sha256",
+      "url",
+      "page_url",
+      "dom_location",
+      "alt",
+      "caption",
+      "link_scope"
+    ]
+  },
+  "identity": {
+    "eligible_scopes": [
+      "type_main",
+      "type_body"
+    ],
+    "excluded_scopes": [
+      "parent",
+      "family",
+      "navigation",
+      "footer",
+      "unresolved"
+    ],
+    "material_sample_requires": [
+      "unique_product_owner",
+      "blind_description",
+      "catalogue_match",
+      "crop_coordinates",
+      "crop_sha256"
+    ],
+    "multi_product_policy": "quarantine_until_resolved",
+    "reused_photo_policy": "Keep occurrence links as evidence; cropped, reframed, recompressed and watermarked versions can still be the same photograph. Cross-material scene reuse holds every disputed material sample until independent provenance resolves ownership.",
+    "contextual_review": "Preserve blind observations unchanged. After script comparison, Astra may reconcile generic metal ambiguity with explicit catalogue facts and inspect a clean crop. Save that contextual verdict separately. A photograph never certifies grade, coating thickness or an undocumented finish."
+  },
+  "description": {
+    "model": "gpt-6-astra",
+    "images_per_call": 1,
+    "blind": true,
+    "input_fields": [
+      "asset_id",
+      "image"
+    ],
+    "echo_id_required": true,
+    "catalogue_hidden_until_description_saved": true,
+    "required_fields": [
+      "asset_id",
+      "visible_section",
+      "material_hypotheses",
+      "surface_finish",
+      "colour",
+      "section_features",
+      "condition",
+      "uncertainties"
+    ],
+    "validation_executor": "script",
+    "mismatch_action": "quarantine",
+    "exact_dimensions_from_pixels": false
+  },
+  "comparison": {
+    "pilot_types": [
+      "001",
+      "054",
+      "006",
+      "016",
+      "060",
+      "024"
+    ],
+    "models": [
+      "gpt_image_native",
+      "ideogram_4_5_high"
+    ],
+    "first_shot": "surface_macro",
+    "inputs_in_order": [
+      "exact_structural_render",
+      "verified_clean_surface_crop"
+    ],
+    "same_input_hashes": true,
+    "output": "six_rows_two_models_contact_sheet",
+    "full_run_requires": "operator_macro_comparison_approval",
+    "execution": "Run 1 benchmark completed. Current production uses the metered company GPT Image 2.5 Sunburst API; accepted native outputs are reused."
+  },
+  "sets": {
+    "shots": [
+      "angled_product"
+    ],
+    "coverage": "operator-approved explicit visual-family scope, with whole-catalogue backlog preserved",
+    "surface_macro": {
+      "fills_frame": true,
+      "lighting": "hard directional light, crisp highlights and deep contrast",
+      "focus": "shallow depth of field",
+      "anchor_feature": "a distinctive feature of this exact section: corner radius, flange root, weld, raised tear, perforation",
+      "material": "the verified material sample of this product type",
+      "publication": "Private material-development evidence; excluded from the current public slideshow."
+    },
+    "studio": {
+      "background": "#E4E2DE neutral-grey seamless sweep",
+      "reference": "One reviewed image shared across every generated view and family; record its hash.",
+      "lighting": "Hard directional key from upper left, consistent exposure and white balance, controlled specular reflections, common shadow direction and softness.",
+      "consistency": "Compare the complete single-view delivery sheet across families. Material appearance may vary; the photographic studio stays fixed."
+    }
+  },
+  "record": [
+    "input_ids",
+    "input_hashes",
+    "crop_rect",
+    "prompt",
+    "model_requested",
+    "model_actual",
+    "provider_receipt",
+    "output_file",
+    "output_hash",
+    "cost",
+    "verdict",
+    "reason",
+    "retry_parent"
+  ],
+  "gates": [
+    "all_links_classified",
+    "no_parent_material_samples",
+    "one_image_one_echoed_id",
+    "blind_description_before_catalogue_check",
+    "unique_confirmed_material_owner",
+    "matching_pair_input_hashes",
+    "one_angled_view_present",
+    "all_images_visually_judged",
+    "source_backed_numeric_master",
+    "consistent_section_across_views",
+    "single_piece_object_count",
+    "close_framing_with_long_stock_continuation",
+    "shared_studio_reference",
+    "cross_family_background_and_lighting_match"
+  ],
+  "production": {
+    "model_requested": "gpt-image-2.5-sunburst-2026-09-08",
+    "generation_workers": 4,
+    "visual_review_model": "gpt-5.6-terra",
+    "first_shot": "angled_product",
+    "scope": "One representative per evidenced section/material/finish combination. Grade-only changes may share when appearance is evidenced; distinct coatings and sections remain separate. Hardware needs its own product geometry or own-type source photo as structure.",
+    "lighting": "Actual saved owner references and their descriptions control hard directional key, controlled specular lines, deep blacks, quiet grey studio and shallow macro focus. Brand adjectives are insufficient.",
+    "material_zones": [
+      "outside",
+      "inside",
+      "cut_face",
+      "coating_or_cladding"
+    ],
+    "retry_policy": "Set a bounded call budget before each batch; preserve rejected output and change a concrete physical clause or structural reference before retrying.",
+    "delivery": "One individually judged angled product image per visual family. Validate source/export hashes and exact SKU mappings with pipeline.studio.delivery. Record studio reference hash, representative catalogue dimensions, provider usage, request ID and cost; reconcile provider invoice separately.",
+    "metering": {
+      "text_input_usd_per_million": 5,
+      "image_input_usd_per_million": 8,
+      "image_output_usd_per_million": 30,
+      "source": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
+      "verified_on": "2026-10-11",
+      "settlement": "usage-priced cost; provider invoice reconciliation separate"
+    },
+    "sales_checkpoint": "Retain accepted sets; add specifically selected complex products. Stop metered generation at the approved scope or budget. Remaining catalogue photography is an onboarding stage, not an unfinished checkout feature."
+  },
+  "geometry": {
+    "revision": "close-framing-numeric-geometry-2026-10-11",
+    "trigger": "User rejected inconsistent geometry, then rejected zoomed-out corrective framing",
+    "whole_piece": {
+      "object_count": 1,
+      "length": "Choose a common purchasable stock length from the catalogue. Record millimetres and the selection reason. Short source samples establish finish, not stock length.",
+      "framing": "Close product view. Long stock continues beyond the frame; one near end may establish section. Product scale comes from consistent proportions, not fitting its full length in frame."
+    },
+    "master_geometry": {
+      "fields": [
+        "sku",
+        "section_dimensions_mm",
+        "represented_length_mm",
+        "dimension_basis",
+        "source_row",
+        "structural_mesh_sha256",
+        "finish_feature_evidence",
+        "camera_position",
+        "camera_target",
+        "focal_length_mm",
+        "sensor_width_mm",
+        "focus_distance",
+        "aperture",
+        "edge_radius_or_bevel_evidence",
+        "texture_scale_basis"
+      ],
+      "shared_between_views": true,
+      "camera_changes_only": true,
+      "minimum_checks": [
+        "section ratio",
+        "length-to-width ratio",
+        "object count",
+        "end shape",
+        "consistent finish features",
+        "same cut-face metal zone"
+      ]
+    },
+    "source_roles": {
+      "structural_render": "One numerically defined part; authoritative geometry.",
+      "material_crop": "Surface class, colours and texture only.",
+      "category_photo": "Context; each individual variant needs an evidenced binding.",
+      "lighting_reference": "Lighting and framing only."
+    },
+    "qa": {
+      "before_generation": "Inspect the neutral angled structure and its dimensions. Resolve variant bindings before generation.",
+      "after_generation": "Compare the generated angled image against its structural reference and the complete delivery against one studio anchor. Record specific gate verdicts and evidence.",
+      "reject": [
+        "shortblockinsteadlongbar",
+        "stackorparallelbars",
+        "exaggeratedgrooves",
+        "crossviewthicknesschange",
+        "wrongopeningaspect",
+        "macroshowingwholeobject"
+      ]
+    },
+    "cost_discipline": "Stop on failed structure before spending. Generate one angled image per approved visual family. Retry only after a concrete correction within the batch budget."
+  },
+  "construction_guide": "RENDERING.md"
+}

@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  color: var(--ink);
+  background: var(--paper);
+  font: var(--font-size-ui)/1.5 var(--font);
+}
+button, a { font: inherit; }
+button { color: inherit; cursor: pointer; }
+button:disabled { cursor: wait; opacity: .55; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0 clamp(20px, 4vw, 56px);
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
+  backdrop-filter: blur(16px);
+}
+.brand { display: flex; align-items: center; gap: 9px; color: var(--ink); text-decoration: none; }
+.brand img { width: 26px; height: 26px; }
+.wordmark { font: 650 22px/1 var(--wordmark-font); letter-spacing: -.7px; }
+nav { display: flex; align-items: center; gap: 4px; margin-left: clamp(28px, 5vw, 70px); }
+nav a, .topbar button {
+  padding: 8px 11px;
+  border: 0;
+  border-radius: var(--radius);
+  color: var(--muted);
+  background: transparent;
+  text-decoration: none;
+}
+nav a:hover, nav a[aria-current="page"], .topbar button:hover { color: var(--ink); background: var(--surface); }
+.topbar button { margin-left: auto; }
+main { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0 80px; }
+.page-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 34px; }
+.eyebrow { margin: 0 0 7px; color: var(--muted); font-size: 12px; }
+h1 { margin: 0; font-size: clamp(34px, 5vw, 52px); font-weight: 500; line-height: 1.05; letter-spacing: -1.8px; }
+.page-heading p:last-child { margin: 13px 0 0; color: var(--muted); }
+.secondary {
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.secondary:hover { border-color: var(--muted); }
+.message { margin: 0; padding: 24px 0; color: var(--muted); border-top: 1px solid var(--border); }
+.orders { border-top: 1px solid var(--border); }
+.order {
+  display: grid;
+  grid-template-columns: minmax(160px, 1.1fr) minmax(120px, .7fr) minmax(160px, .9fr) minmax(240px, 1.4fr);
+  gap: 24px;
+  align-items: start;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.order h2 { margin: 0 0 5px; font-size: 15px; font-weight: 600; letter-spacing: -.15px; }
+.order-id, .meta { margin: 0; color: var(--muted); font-size: 12px; }
+.state { display: inline-flex; padding: 4px 8px; border-radius: var(--radius-sm); background: var(--surface); font-size: 12px; }
+.price strong { display: block; font-size: 19px; font-weight: 550; letter-spacing: -.35px; }
+.price span, .date span, .fulfilment span { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; }
+.date strong, .fulfilment strong { display: block; font-weight: 550; }
+.delivery { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.files { grid-column: 1 / -1; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 16px; }
+.files strong { font-size: 12px; font-weight: 600; }
+.files a { color: var(--ink); font-size: 13px; text-underline-offset: 3px; }
+.pagination { display: flex; justify-content: center; padding-top: 28px; }
+@media (max-width: 760px) {
+  .topbar { min-height: 58px; padding: 0 16px; }
+  nav { margin-left: 18px; }
+  nav a:first-child { display: none; }
+  .topbar button { padding-inline: 8px; }
+  main { width: min(100% - 32px, 560px); padding-top: 38px; }
+  .page-heading { align-items: flex-start; }
+  .page-heading p:last-child { max-width: 310px; }
+  .order { grid-template-columns: 1fr 1fr; gap: 19px 14px; }
+  .order > :first-child, .delivery { grid-column: 1 / -1; }
+}
+@media (max-width: 390px) {
+  .wordmark { display: none; }
+  nav { margin-left: 8px; }
+  .page-heading { display: block; }
+  .page-heading .secondary { margin-top: 18px; }
+  .order { grid-template-columns: 1fr; }
+  .order > :first-child, .delivery { grid-column: auto; }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "manufacturer-run",
+    "name": "Manufacturer run",
+    "description": "Execute the measured manufacturer onboarding and maintenance stages.",
+    "instructions_from": [
+      "prompts/onboarding.md"
+    ],
+    "required_tools": [
+      "catalog_find",
+      "catalog_read",
+      "quote_ready",
+      "run_stage_plan",
+      "run_read"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+# Select an owned demo hostname. Product users continue using the Rocoto UI.
+communications-demo.example.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:3110
+    header X-Content-Type-Options nosniff
+}

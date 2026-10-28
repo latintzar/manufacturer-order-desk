@@ -1,0 +1,154 @@
+{
+  "schema": "rocoto.pack.v1",
+  "id": "manufacturer",
+  "revision": "manufacturer-2026-10-11-1",
+  "product": {
+    "name": "Rocoto",
+    "segment": "Manufacturers with published catalogues",
+    "capability_name": "Rocoto Orders",
+    "summary": "A complete order page and a company store maintained by an agent, from the manufacturer website."
+  },
+  "prompts": {
+    "system": "prompts/system.md",
+    "fixed_chat_common": "prompts/common.md"
+  },
+  "fixed_chats": [
+    {
+      "purpose": "organization",
+      "title": "Organization",
+      "icon": "building",
+      "job": "Company identity, catalogue sources, selling rules and claim verification.",
+      "prompt": "prompts/organization.md"
+    },
+    {
+      "purpose": "office",
+      "title": "Office",
+      "icon": "calendar",
+      "opens": "chat",
+      "job": "Orders, stock, workshop capacity and customer commitments.",
+      "prompt": "prompts/office.md",
+      "skill": "manufacturer-run"
+    }
+  ],
+  "agent_classes": [
+    {
+      "kind": "action",
+      "authority": "granted_effects",
+      "default": true,
+      "label": "Dispatch",
+      "plural": "Dispatch agents",
+      "icon": "skill",
+      "create_label": "New dispatch agent",
+      "empty_label": "Dispatch agents appear here.",
+      "input_kinds": [
+        "tracker_events"
+      ],
+      "starter_prompt": "Help me create a Dispatch agent that tells a customer when their delivery date moves."
+    },
+    {
+      "kind": "tracker",
+      "authority": "participant_reach",
+      "label": "Desk",
+      "plural": "Desks",
+      "icon": "eye",
+      "create_label": "New desk",
+      "empty_label": "Desks appear here.",
+      "input_kinds": [
+        "tracker_events"
+      ],
+      "starter_prompt": "Help me create a Desk that follows one machine's queue and tells its operator when it changes."
+    }
+  ],
+  "recipes": [],
+  "event_vocabulary": null,
+  "skills": "skills.json",
+  "agent_templates": "agent_templates.json",
+  "tool_families": [
+    "manufacturer_tools:family",
+    "manufacturer_orders:family"
+  ],
+  "host_module": "manufacturer_host",
+  "surfaces": [
+    {
+      "id": "orders",
+      "title": "Orders",
+      "nav": "primary",
+      "tabs": [
+        {
+          "id": "order_log",
+          "title": "Order requests",
+          "display": "list",
+          "content": "Customer orders and acceptance state",
+          "produced_by": "the company store",
+          "read_with": "orders_list"
+        }
+      ]
+    }
+  ],
+  "connections_expected": [],
+  "data_sources": [
+    {
+      "id": "company_store",
+      "title": "Company database",
+      "read_with": [
+        "catalog_find",
+        "quote_ready"
+      ],
+      "skill": "manufacturer-run"
+    }
+  ],
+  "flow": [
+    {
+      "stage": "discover",
+      "does": "Discover every public page, price source and downloadable file",
+      "attaches": "agent"
+    },
+    {
+      "stage": "catalogue",
+      "does": "Read every product, price basis, MOQ, quantity step, selling rule and worked example",
+      "attaches": "agent"
+    },
+    {
+      "stage": "page",
+      "does": "Build the complete delivery-menu flow",
+      "attaches": "agent"
+    },
+    {
+      "stage": "picture_pilot",
+      "does": "Review six material-specific macros under the saved reference lighting before the full run.",
+      "attaches": "agent"
+    },
+    {
+      "stage": "pictures",
+      "does": "Execute imagery.json with dedicated image workers: one GPT Image model, one angled product image for each verified visual material variant",
+      "attaches": "agent"
+    },
+    {
+      "stage": "store",
+      "does": "Ingest facts with sources, prices with history, unknown stock as listed, capacity as assumed, MOQ and steps",
+      "attaches": "agent"
+    },
+    {
+      "stage": "orders_claim",
+      "does": "Wire order submission, pending company claims, branded bilingual email receipts and private order-management capabilities",
+      "attaches": "agent"
+    },
+    {
+      "stage": "refresh",
+      "does": "Re-read price sources nightly with bounded retrieval",
+      "attaches": "agent"
+    },
+    {
+      "stage": "verify",
+      "does": "Prove every source row, every catalogue type, every required image and both phone and desktop flows",
+      "attaches": "agent"
+    },
+    {
+      "stage": "publish",
+      "does": "Prepare a reviewed package and exact publish plan",
+      "attaches": "agent"
+    }
+  ],
+  "demo": null,
+  "capabilities": "capabilities.json"
+}

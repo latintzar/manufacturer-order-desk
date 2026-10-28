@@ -1,0 +1,14 @@
+.venv/
+.local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.env
+.env.*
+credentials.json
+owner-code.txt
+*.sqlite
+*.sqlite3
+*.db
+*.log

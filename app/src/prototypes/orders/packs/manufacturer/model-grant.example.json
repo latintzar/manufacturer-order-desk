@@ -1,0 +1,36 @@
+{
+  "company": "metal-m",
+  "openai_project": null,
+  "account_evidence": null,
+  "api_key_env": "ROCOTO_ORDERS_OPENAI_API_KEY",
+  "grant_id": null,
+  "approval_evidence": null,
+  "expires_at": null,
+  "maximum_usd": null,
+  "maximum_run_usd": null,
+  "maximum_requests": 8,
+  "maximum_output_tokens": 2048,
+  "profiles": {
+    "reader": {
+      "model": null,
+      "pricing_evidence": null,
+      "input_usd_per_million": null,
+      "output_usd_per_million": null,
+      "input_token_bound": 131072
+    },
+    "judge": {
+      "model": null,
+      "pricing_evidence": null,
+      "input_usd_per_million": null,
+      "output_usd_per_million": null,
+      "input_token_bound": 131072
+    },
+    "vision": {
+      "model": null,
+      "pricing_evidence": null,
+      "input_usd_per_million": null,
+      "output_usd_per_million": null,
+      "input_token_bound": 131072
+    }
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "customer_research",
+    "revision": "customer-research-1",
+    "title": "Customer research",
+    "job": "Verify the business behind one submitted order and save its sourced company context and internal email snippet.",
+    "instructions": "prompts/research.md",
+    "launched_by": ["organization", "action"],
+    "steps": [
+      {
+        "id": "context",
+        "title": "Read the submitted company",
+        "instructions": "Use the order reserved in the scheduled input, or claim one queued order in an Organization turn. Read its submitted business context and saved sources. Keep its lease for the final write.",
+        "tools": ["claim_order_research", "get_order_research"],
+        "after": [],
+        "done_when": "Exactly one order is reserved and its submitted business context is understood."
+      },
+      {
+        "id": "research",
+        "title": "Verify public business facts",
+        "instructions": "Use the current managed parent's web search and page-reading tools to verify the company and inspect relevant public pages, within twenty pages and the current turn allowance. Record each actual source and keep uncertain matches for review.",
+        "tools": [],
+        "after": ["context"],
+        "done_when": "Business facts have their actual source URLs, and identity or coverage gaps have been recorded."
+      },
+      {
+        "id": "save",
+        "title": "Enrich the order",
+        "instructions": "Save the findings and internal email snippet with record_order_research, marking uncertain evidence needs_review. Use fail_order_research for transient source failures. Finish after this order.",
+        "tools": ["record_order_research", "fail_order_research"],
+        "after": ["research"],
+        "done_when": "The order contains saved source-supported findings or its bounded retry is recorded."
+      }
+    ],
+    "done_when": "The reserved order has a durable enriched or needs_review result with sources, or a recorded bounded retry."
+  }
+]

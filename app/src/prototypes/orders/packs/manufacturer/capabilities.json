@@ -1,0 +1,16 @@
+[
+  {
+    "id": "manufacturer_tool_host",
+    "title": "Manufacturer company tools",
+    "state": "partial",
+    "works": "The isolated published b512 harness loads this pack with its actual validator, registry, Codex transport and authenticated membership. The manufacturer host binds that membership to one company database, exposes paginated private orders at /api/manufacturer/orders and serves the Orders page at /manufacturer/orders. A commissioned native API turn used that transport to read a real catalogue item and the empty order database with read-only authority enforced. The current 23d development harness separately loads vertical.json and its durable catalogue-readiness recipe, with declared Luna reader and Astra judge roles; offline fake-provider proof covers recipe records, role selection and denial.",
+    "missing": "The published b512 service keeps inherited-model delegate_investigations and treats every stage profile as planning metadata. Current managed live execution is held on OpenAI support case 17021543: Session budget configuration is not enabled, the prior allowance is expired, and selected-project Agents-session access still needs proof. The two-step review does not execute the full onboarding stages. Source crawling, imagery, reviewed writes and publishing still require their specific host capabilities and authority; the complete onboarding run is not self-service.",
+    "where": [
+      "app/src/prototypes/orders/harness_launcher.py",
+      "app/src/prototypes/orders/orders_tools.py",
+      "app/src/prototypes/orders/packs/manufacturer/PACK.md",
+      "app/src/prototypes/orders/manufacturer_host.py",
+      "app/src/prototypes/orders/packs/manufacturer/web/manufacturer_orders.html"
+    ]
+  }
+]
