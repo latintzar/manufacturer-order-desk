@@ -1,8 +1,6 @@
 # Manufacturer order desk
 
-Product selection, reviewed orders and a shared catalogue editor.
-
-[Open preview](https://preview.atelierneyra.com/apps/manufacturer-order-desk/) · [Documentation](https://docs.atelierneyra.com/manufacturer-order-desk/overview/)
+Manufacturer order desk is a workspace for manufacturer sales orders, product selection and catalogue editing.
 
 ![The native catalogue workspace with authored sample products](docs/images/workspace.png)
 
