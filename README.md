@@ -2,6 +2,8 @@
 
 Manufacturer order desk is a workspace for manufacturer sales orders, product selection and catalogue editing.
 
+[Website](https://atelierneyra.com/manufacturer-order-desk) · [Open app](https://preview.atelierneyra.com/?project=manufacturer-order-desk) · [Documentation](https://docs.atelierneyra.com/manufacturer-order-desk/overview/)
+
 ![Manufacturer order desk showing the sample hardware catalogue](docs/assets/readme-hero.png)
 
 ## Run it
@@ -71,4 +73,3 @@ ROCOTO_VERTICAL=manufacturer .venv/bin/python -m pytest -q harness/tests/test_ma
 
 [MIT](LICENSE) covers Peter Neyra’s original code. Upstream components retain their own notices and terms, including the PDF worker’s PyMuPDF dependency. See [THIRD-PARTY.md](THIRD-PARTY.md).
 
-[made by atelier neyra](https://atelierneyra.com)
