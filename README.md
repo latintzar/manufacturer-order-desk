@@ -73,3 +73,4 @@ ROCOTO_VERTICAL=manufacturer .venv/bin/python -m pytest -q harness/tests/test_ma
 
 [MIT](LICENSE) covers Peter Neyra’s original code. Upstream components retain their own notices and terms, including the PDF worker’s PyMuPDF dependency. See [THIRD-PARTY.md](THIRD-PARTY.md).
 
+[made by atelier neyra](https://atelierneyra.com)
