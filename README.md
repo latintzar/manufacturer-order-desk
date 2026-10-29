@@ -2,9 +2,23 @@
 
 Manufacturer order desk is a workspace for manufacturer sales orders, product selection and catalogue editing.
 
-[Website](https://atelierneyra.com/manufacturer-order-desk) · [Open app](https://preview.atelierneyra.com/?project=manufacturer-order-desk) · [Documentation](https://docs.atelierneyra.com/manufacturer-order-desk/overview/)
+[Website](https://atelierneyra.com/manufacturer-order-desk) · [Open app](https://preview.atelierneyra.com/apps/manufacturer-order-desk/) · [Documentation](https://docs.atelierneyra.com/manufacturer-order-desk/overview/)
 
 ![Manufacturer order desk showing the sample hardware catalogue](docs/assets/readme-hero.png)
+
+## How it works
+
+A customer request needs to become a clear product specification and quote, while catalogues and prices keep changing. Sales needs to keep the original request, chosen parts and quoted values together.
+
+| Feature | What it does |
+| --- | --- |
+| Order desk | Review requests with customer, pricing, products and source context. |
+| Product catalogue | Edit articles and prices through versioned configuration. |
+| Public configurator | Choose parts and submit specifications through the saved renderer. |
+| Quotes and history | Retain quoted values and inspect or restore configuration history. |
+| Agent tools | Use the original vertical SDK and harness integration for the manufacturer domain. |
+
+The native app runs the original services with an authored six-article catalogue and sample requests. Client-owned catalogues, photographs and account data retain their original custody. Connected models and providers use your own setup. Load an owned manufacturer catalogue, configure its specification flow and commission the domain tools. [Product guide](docs/PROJECT.md).
 
 ## Run it
 
