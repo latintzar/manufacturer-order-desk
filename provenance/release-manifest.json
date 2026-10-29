@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4300,
-      "sha256": "49de07ee7ed2e5dda0906928c8e9793b7ba1f3c25782583d70069c2ee363781b"
+      "bytes": 4303,
+      "sha256": "b3171b61431e5f671c3b8f2701677557d25acb27754e4e8b100bedf25a8d68ca"
     },
     {
       "path": "THIRD-PARTY.md",
@@ -1108,14 +1108,14 @@
       "sha256": "ee5e1b37522534bde6fc2f6d4f275608dbfb434190c8d749889f0fb473739ea5"
     },
     {
-      "path": "app/src/prototypes/orders/tools/seed_praktiker_demo.py",
-      "bytes": 4753,
-      "sha256": "f0f6a039411fffd64cae24696d0fd7aeef320dd146f92750d98a0faa1b16abde"
-    },
-    {
       "path": "app/src/prototypes/orders/tools.py",
       "bytes": 18414,
       "sha256": "e7fe51610259d551c3e58e5dbe18fd075393d5da183447287962cd4efa3e5f1c"
+    },
+    {
+      "path": "app/src/prototypes/orders/tools/seed_praktiker_demo.py",
+      "bytes": 4753,
+      "sha256": "f0f6a039411fffd64cae24696d0fd7aeef320dd146f92750d98a0faa1b16abde"
     },
     {
       "path": "app/src/prototypes/orders/vendor/THREE-LICENSE",
@@ -1341,6 +1341,11 @@
       "path": "docs/VALIDATION.md",
       "bytes": 4753,
       "sha256": "bab528762f09a3472d68e48ae189a95b723f38f8826556ea72ee6ab0269a01c4"
+    },
+    {
+      "path": "docs/assets/readme-hero.png",
+      "bytes": 207947,
+      "sha256": "e257f9ceb9b66fb586695124a2d8770a1af25864765e51dca69836305d013866"
     },
     {
       "path": "docs/images/workspace.png",

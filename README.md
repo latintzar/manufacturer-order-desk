@@ -2,7 +2,7 @@
 
 Manufacturer order desk is a workspace for manufacturer sales orders, product selection and catalogue editing.
 
-![The native catalogue workspace with authored sample products](docs/images/workspace.png)
+![Manufacturer order desk showing the sample hardware catalogue](docs/assets/readme-hero.png)
 
 ## Run it
 
