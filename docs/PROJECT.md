@@ -25,4 +25,4 @@ Customer specification → Product selection → Saved quotation → Order desk 
 
 The native app runs the original services with an authored six-article catalogue and sample requests. Client-owned catalogues, photographs and account data retain their original custody. Connected models and providers use your own setup. Load an owned manufacturer catalogue, configure its specification flow and commission the domain tools.
 
-Source: [docs/architecture.md](../docs/architecture.md), [docs/workflows.md](../docs/workflows.md), [docs/setup.md](../docs/setup.md).
+See the repository README for source and setup links.
