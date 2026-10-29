@@ -35,7 +35,7 @@ with TestClient(app) as client:
     page=client.get('/')
     assert page.status_code==200,page.text
     policy=page.headers['content-security-policy']
-    expected="default-src 'self'; img-src 'self' data: https://raw.githubusercontent.com https://orders.example.test; media-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'self'"
+    expected="default-src 'self'; img-src 'self' data: https://raw.githubusercontent.com https://atelierneyra.com https://orders.example.test; media-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'self'"
     assert policy==expected,policy
     assert page.headers['referrer-policy']=='no-referrer'
     api=client.get('/api/manufacturer/overview')
