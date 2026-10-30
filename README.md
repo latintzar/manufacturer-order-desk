@@ -1,10 +1,12 @@
-# Manufacturer order desk
+# Manufacturer Order Desk
 
-Manufacturer order desk is a workspace for manufacturer sales orders, product selection and catalogue editing.
+An AI-native order desk for construction materials manufacturers working across web and email
+
+Manufacturer Order Desk is a workspace for manufacturer sales orders, product selection and catalogue editing.
 
 [Website](https://atelierneyra.com/manufacturer-order-desk) · [Open app](https://preview.atelierneyra.com/apps/manufacturer-order-desk/) · [Documentation](https://docs.atelierneyra.com/manufacturer-order-desk/overview/)
 
-![Manufacturer order desk showing the sample hardware catalogue](docs/assets/readme-hero.png)
+![Manufacturer Order Desk](https://atelierneyra.com/assets/product-shots-20261030/manufacturer-order-desk.jpg)
 
 ## How it works
 
