@@ -6,7 +6,7 @@ Manufacturer Order Desk is a workspace for manufacturer sales orders, product se
 
 [Website](https://atelierneyra.com/manufacturer-order-desk) · [Open app](https://preview.atelierneyra.com/apps/manufacturer-order-desk/) · [Documentation](https://docs.atelierneyra.com/manufacturer-order-desk/overview/)
 
-![Manufacturer Order Desk](https://atelierneyra.com/assets/product-shots-20261030/manufacturer-order-desk.jpg)
+![Manufacturer Order Desk](https://atelierneyra.com/assets/product-motion-v3/manufacturer-order-desk.jpg)
 
 ## How it works
 
