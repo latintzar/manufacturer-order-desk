@@ -88,4 +88,16 @@ English display prefers `en` and falls back to `bg`. English questionnaire write
 
 The native first result exercises the recipient-owned public widget, Orders authority, bridge and workspace using authored sample data. It establishes that local workflow; paid model execution, outbound mail and external helpdesk delivery need their own commissioning and verification. The [README](../README.md) owns startup and credentials; [product decisions](UX.md) explains the interface.
 
+## Source layout
+
+| Path | Responsibility |
+| --- | --- |
+| `app/src/prototypes/orders/` | Public widget, pricing, specification processing and authoritative `CompanyStore` |
+| `harness/verticals/manufacturer/` | Orders, customers, products, configurator, correspondence and company-scoped source bridge |
+| `harness/runtime/`, `mechanics/`, `sdk/` | Complete pinned shared workspace runtime, policy, files, tools and admission mechanisms |
+| `harness/web/` | Native browser shell and shared components |
+| `backend/realtime/` | Retained PostgreSQL journal support; the first result uses SQLite |
+| `tools/` | Isolated first result, hidden key input and your own service entry points |
+| `fixtures/sample-hardware/` | Newly authored sample artwork and provenance |
+
 [made by atelier neyra](https://atelierneyra.com)

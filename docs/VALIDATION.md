@@ -43,4 +43,13 @@ Recipient-hosted OpenAI, managed authentication, funding, SMTP, Chatwoot, catalo
 
 The secret scan has one known finding in the byte-pinned upstream Mermaid bundle. Its exact rule, path, line and file hash are recorded in `provenance/secret-scan-disposition.json`; all other findings require review. The source archive excludes private state, cookies, credentials, databases, uploads and dependency environments.
 
+## Checks
+
+```sh
+ROCOTO_VERTICAL=manufacturer .venv/bin/python -m pytest -q harness/tests/test_manufacturer_*.py tests
+.venv/bin/python -m pytest -q app/src/prototypes/orders/tests
+```
+
+[Validation](VALIDATION.md) records the precise tested subset, browser proof and optional acceptance limits. Original client-specific research presentation fixtures remain private; generic store, role, retry, pricing, file and revision contracts are retained.
+
 [made by atelier neyra](https://atelierneyra.com)

@@ -1,6 +1,8 @@
-# Catalogues, quotes and orders for hardware manufacturers
+# Manufacturer Order Desk
 
-Manufacturer order desk is a sales app for hardware manufacturers. It connects product catalogues, configurable offers and incoming orders, with an agent harness and vertical SDK for continuing the sales workflow.
+Manufacturer Order Desk is an AI-native order desk for construction materials manufacturers working across web and email. Customers configure products and request quotes online; the sales team keeps incoming orders, product options and email requests in the same workflow.
+
+[Product tour](product-tour.md) follows a customer specification through quotation, review and configuration history.
 
 A customer request needs to become a clear product specification and quote, while catalogues and prices keep changing. Sales needs to keep the original request, chosen parts and quoted values together.
 

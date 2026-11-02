@@ -1,6 +1,6 @@
-# Manufacturer order desk
+# Manufacturer Order Desk
 
-Read `README.md`, `docs/SETUP.md` and the source for the flow being changed. `docs/ARCHITECTURE.md`, `docs/UX.md` and `docs/reference/` explain the preserved design. The agent skill is `skills/manufacturer-order-desk/SKILL.md`.
+Read `README.md`, `docs/product-tour.md`, `docs/SETUP.md` and the source for the flow being changed. `docs/ARCHITECTURE.md`, `docs/UX.md` and `docs/reference/` explain the preserved design. The agent skill is `skills/manufacturer-order-desk/SKILL.md`.
 
 Keep changes in this repository and recipient-owned state. Choose the company before its accounts, keys, source or runtime. The source authorities and existing Vitrina services are separate systems. The sample scripts use authored fixtures, clear inherited credentials and fence server networking to loopback.
 

@@ -23,4 +23,10 @@ The sample’s manual workspace sets `agentEditing: false`. A recipient enabling
 
 Source configuration is the deployment contract. A key supplies authentication; scoped grants, membership, budgets and verified external setup authorize effects. The local first-result scripts keep those external effects held while the deterministic product workflows run.
 
+## Deployment and integrations
+
+The two services can run independently against your own state. [Setup](SETUP.md) explains their source binding, private transport token, public origins, databases and files.
+
+Manual catalogue and order workflows run locally. The retained managed-agent, hosted identity, billing, email and Chatwoot interfaces have their own credentials, admission and configuration and acceptance contracts. The [integration guide](INTEGRATIONS.md) maps those boundaries to source. The sample keeps its manual workspace capabilities and performs zero model or outbound-mail calls.
+
 [made by atelier neyra](https://atelierneyra.com)
